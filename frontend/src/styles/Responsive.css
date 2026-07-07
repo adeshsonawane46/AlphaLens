@@ -1,0 +1,36 @@
+@import './Variables.css';
+
+/* Handle padding constraints on mobile screens */
+@media (max-width: 767px) {
+  .page-container {
+    padding-top: 80px;
+    padding-bottom: 80px; /* space for mobile nav bar */
+  }
+
+  .connection-panel {
+    height: 200px;
+  }
+
+  .connection-title {
+    font-size: 24px;
+  }
+
+  .connection-readouts {
+    gap: 8px;
+  }
+
+  .readout-divider {
+    margin: 0 12px;
+  }
+
+  .margin-readouts-left, .margin-readouts-right {
+    display: none; /* Hide margin data logs on mobile */
+  }
+}
+
+/* Widescreen adjustments */
+@media (min-width: 1600px) {
+  .page-container {
+    max-width: 1600px;
+  }
+}

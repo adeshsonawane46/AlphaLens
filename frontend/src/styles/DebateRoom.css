@@ -1,0 +1,199 @@
+@import './Variables.css';
+
+.debate-container {
+  display: grid;
+  grid-template-cols: 1fr;
+  gap: var(--stack-lg);
+  margin-bottom: var(--stack-lg);
+}
+
+@media (min-width: 768px) {
+  .debate-container {
+    grid-template-cols: repeat(2, 1fr);
+  }
+}
+
+/* Agent Thesis Column Cards */
+.thesis-card {
+  border-radius: var(--rounded-md);
+  overflow: hidden;
+}
+
+.thesis-card.bull {
+  border-left: 4px solid rgba(34, 197, 94, 0.5);
+}
+
+.thesis-card.bear {
+  border-left: 4px solid rgba(255, 180, 171, 0.5);
+}
+
+.thesis-card-header {
+  padding: 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.thesis-card-header.bull {
+  background: rgba(34, 197, 94, 0.1);
+}
+
+.thesis-card-header.bear {
+  background: rgba(255, 180, 171, 0.1);
+}
+
+.thesis-avatar-wrapper {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--rounded-full);
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.thesis-avatar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.thesis-agent-name {
+  font-weight: 700;
+  color: #fff;
+  font-size: 14px;
+}
+
+.thesis-agent-role {
+  font-size: 10px;
+  font-family: var(--font-mono);
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 2px;
+}
+
+.thesis-agent-role.bull { color: var(--success); }
+.thesis-agent-role.bear { color: var(--error); }
+
+.thesis-card-body {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.thesis-item {
+  display: flex;
+  gap: 16px;
+}
+
+.thesis-item-icon {
+  font-size: 24px;
+}
+
+.thesis-item-icon.bull { color: var(--success); }
+.thesis-item-icon.bear { color: var(--error); }
+
+.thesis-item-content {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.thesis-item-title {
+  color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.thesis-item-desc {
+  color: var(--outline);
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+/* Chief Justice Verdict */
+.verdict-card-outer {
+  padding: 2px;
+  border-radius: var(--rounded-md);
+  margin-bottom: var(--stack-lg);
+}
+
+.verdict-card-inner {
+  background: var(--surface-container);
+  border-radius: calc(var(--rounded-md) - 2px);
+  padding: 32px;
+}
+
+.verdict-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 672px;
+  margin: 0 auto;
+  gap: var(--stack-md);
+}
+
+.verdict-icon-container {
+  width: 64px;
+  height: 64px;
+  border-radius: var(--rounded-full);
+  background: rgba(255, 184, 116, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--tertiary);
+  margin-bottom: 8px;
+}
+
+.verdict-icon-container span {
+  font-size: 36px;
+}
+
+.verdict-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.verdict-text {
+  color: var(--on-surface-variant);
+  font-size: 18px;
+  line-height: 1.6;
+  font-style: italic;
+}
+
+.verdict-metadata-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--stack-md);
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.verdict-meta-item {
+  padding: 8px 16px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--rounded-md);
+  text-align: center;
+}
+
+.verdict-meta-label {
+  color: var(--outline);
+  font-size: 10px;
+  font-family: var(--font-mono);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.verdict-meta-value {
+  color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+  margin-top: 2px;
+}
+
+.verdict-meta-value.orange {
+  color: var(--tertiary);
+}

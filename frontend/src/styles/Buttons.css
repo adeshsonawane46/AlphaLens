@@ -1,0 +1,98 @@
+@import './Variables.css';
+
+/* Primary Button (Solid Electric Blue) */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: var(--primary);
+  color: var(--on-primary-container);
+  padding: 12px 24px;
+  border-radius: var(--rounded-DEFAULT);
+  font-weight: 700;
+  font-size: 14px;
+  transition: all var(--transition-normal);
+  width: 100%;
+}
+
+.btn-primary:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 30px rgba(178, 197, 255, 0.4);
+}
+
+.btn-primary:active {
+  transform: scale(0.98);
+}
+
+/* Secondary Button (Ghost style / subtle border) */
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: var(--rounded-DEFAULT);
+  font-weight: 500;
+  font-size: 14px;
+  transition: all var(--transition-normal);
+  width: 100%;
+}
+
+.btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.btn-secondary:active {
+  transform: scale(0.98);
+}
+
+/* Accent Outline Button (Border Primary) */
+.btn-outline-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: transparent;
+  border: 1px solid rgba(178, 197, 255, 0.4);
+  color: var(--primary);
+  padding: 12px 24px;
+  border-radius: var(--rounded-DEFAULT);
+  font-weight: 700;
+  font-size: 14px;
+  transition: all var(--transition-normal);
+  width: 100%;
+}
+
+.btn-outline-primary:hover {
+  background: rgba(178, 197, 255, 0.05);
+  border-color: var(--primary);
+}
+
+.btn-outline-primary:active {
+  transform: scale(0.98);
+}
+
+/* Text link button */
+.btn-text {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--outline);
+  font-size: 14px;
+  font-weight: 500;
+  transition: color var(--transition-fast);
+}
+
+.btn-text:hover {
+  color: var(--primary);
+}
+
+.btn-text.active {
+  color: var(--primary);
+  font-weight: 700;
+}
