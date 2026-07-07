@@ -6,24 +6,49 @@ This document describes the design principles, component architecture, data flow
 
 ## 🏛️ System Overview
 
-AlphaLens AI is an institutional-grade equity research platform combining a modern web frontend, a Node.js API gateway, and a stateful multi-agent AI compiler designed using LangGraph.js and powered by Google Gemini models.
+AlphaLens AI is an AI-powered investment research platform that combines a modern web frontend, a Node.js backend, and a stateful multi-agent AI workflow built with LangGraph.js and Google Gemini to automate equity research and financial analysis.
 
 ```
-       ┌────────────────────────┐
-       │   React / Vite Web UI  │
-       └───────────┬────────────┘
-                   │ HTTPS API (JSON)
-                   ▼
-       ┌────────────────────────┐
-       │   Express.js Backend   │
-       └─────┬────────────┬─────┘
-             │            │ LangGraph State Machine
-             ▼            ▼
-      ┌────────────┐┌──────────────┐
-      │ MySQL DB   ││ Gemini Multi-│
-      │            ││ Agent Engine │
-      └────────────┘└──────────────┘
+                   Internet
+                       │
+                       ▼
+        ┌──────────────────────────┐
+        │  React Frontend (Vercel) │
+        └─────────────┬────────────┘
+                      │ HTTPS / REST API
+                      ▼
+        ┌──────────────────────────┐
+        │ Express Backend (Render) │
+        └───────┬─────────┬────────┘
+                │         │
+                ▼         ▼
+         ┌──────────┐ ┌──────────────┐
+         │  MySQL   │ │ LangGraph AI │
+         │ Database │ │ + LangChain  │
+         └──────────┘ └──────┬───────┘
+                             ▼
+                    Google Gemini API
 ```
+
+---
+
+## 🌐 Deployment Architecture
+
+AlphaLens AI is deployed using a modern cloud architecture.
+
+| Component | Platform |
+|-----------|----------|
+| Frontend | Vercel |
+| Backend | Render |
+| Database | MySQL |
+| AI Engine | LangChain.js + LangGraph.js |
+| LLM | Google Gemini |
+
+### Live Services
+
+- **Frontend:** https://alpha-lens-investment.vercel.app/
+- **Backend API:** https://alphalens-backend-ubiu.onrender.com
+- **Repository:** https://github.com/adeshsonawane46/AlphaLens
 
 ---
 
@@ -84,11 +109,13 @@ The backend operates as a REST API gateway and agent compiler, processing client
 AlphaLens AI leverages **LangChain.js** to construct modular AI components and **LangGraph.js** to choreograph these modules in a stateful, sequential workflow.
 
 ### 1. The Role of LangChain.js
+
 LangChain.js serves as the modular foundation for the AI engine, managing the following core operations:
-*   **Prompt Templates**: Constructs structured instruction sets specifying agent personalities, formatting constraints, and input variable injections.
-*   **Model Interaction**: Connects to Google Gemini models (`chat-bison` / `gemini-pro`) through standardized interfaces, handling system and human message variables.
-*   **Structured Output Parsing**: Utilizes LangChain's output parsers to coerce LLM completions into structured JSON payloads, guaranteeing schema conformity for graphs and metrics tables.
-*   **Reusable AI Components**: Abstracts base chains, API keys, and parameter configurations.
+
+* **Prompt Templates**: Constructs structured instruction sets specifying agent personalities, formatting constraints, and input variable injections.
+* **Model Interaction**: Integrates with Google's Gemini 3.5 Flash model to execute AI-powered financial reasoning, generate investment reports, and produce structured responses.
+* **Structured Output Parsing**: Uses LangChain's output parsers to convert LLM responses into structured JSON payloads, ensuring consistent data for charts, metrics, and analysis.
+* **Reusable AI Components**: Provides reusable abstractions for prompt templates, model configuration, API integration, and workflow components.
 
 ### 2. Orchestration via LangGraph.js
 LangGraph.js defines a stateful graph where each node represents a LangChain-powered agent. The workflow coordinates data compilation step-by-step:
@@ -151,11 +178,26 @@ AlphaLens AI implements strict security paradigms across all components:
 
 ---
 
+## 🚀 Scalability
+
+The architecture follows a decoupled client-server model, allowing each layer to scale independently.
+
+- Frontend can be deployed globally using Vercel CDN.
+- Backend APIs can be horizontally scaled on Render.
+- MySQL supports persistent relational storage.
+- LangGraph allows additional AI agents to be integrated without changing the existing workflow.
+- REST APIs keep the frontend and backend loosely coupled for easier maintenance.
+
+---
+
 ## 📁 Project Folder Structure
 
 ```
 AlphaLens/
 ├── backend/
+│   ├── config/
+│   ├── middleware/
+│   ├── utils/
 │   ├── agents/          # LangGraph multi-agent nodes & state definitions
 │   ├── controllers/     # Route logic controller handlers (simulation, watchlists)
 │   ├── database/        # MySQL configuration, schema.sql, and JSON mock database
@@ -178,19 +220,33 @@ AlphaLens/
 ## 🔄 End-to-End Execution Flow
 
 ```
-┌─────────────────┐       ┌─────────────────┐       ┌─────────────────┐
-│ React Frontend  ├──────>│ Express Backend ├──────>│ MySQL DB Cache  │
-└────────▲────────┘       └────────┬────────┘       └────────┬────────┘
-         │                         │                         │
-         │                         │ (Cache Miss)            │ (Cache Hit)
-         │                         ▼                         │
-         │                ┌─────────────────┐                │
-         │                │  LangGraph.js   │                │
-         │                │  Agent System   │                │
-         │                └────────┬────────┘                │
-         │                         │                         │
-         │                         ▼                         │
-         └─────────────────────────┴─────────────────────────┘
+                    User
+                      │
+                      ▼
+       ┌─────────────────────────┐
+       │ React Frontend (Vercel) │
+       └────────────┬────────────┘
+                    │ HTTPS Request
+                    ▼
+      ┌───────────────────────────┐
+      │ Express Backend (Render)  │
+      └───────┬─────────┬─────────┘
+              │         │
+              ▼         ▼
+      ┌───────────┐  ┌────────────────────┐
+      │ MySQL DB  │  │ LangGraph Workflow │
+      └───────────┘  └─────────┬──────────┘
+                               ▼
+                    Google Gemini API
+                               │
+                               ▼
+                  AI Investment Analysis
+                               │
+                               ▼
+                 JSON Response to Frontend
+                               │
+                               ▼
+              Interactive Dashboard & Charts
 ```
 
 1.  **Search Submission**: A user enters a ticker (e.g., `TCS`) in the frontend search bar and hits enter.
