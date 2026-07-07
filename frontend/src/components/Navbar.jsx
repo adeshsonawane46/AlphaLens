@@ -41,47 +41,7 @@ const Navbar = () => {
     <header className="navbar" style={{ position: 'relative' }}>
       <div className="navbar-left">
         <Link to="/" className="navbar-brand">AlphaLens AI</Link>
-        <span className="navbar-badge">Institutional</span>
       </div>
-
-      <nav className="navbar-links">
-        <Link 
-          to={`/analysis/${lastTicker}`} 
-          className={`navbar-link ${location.pathname.startsWith('/analysis') ? 'active' : ''}`}
-        >
-          Market Analysis
-        </Link>
-        <Link 
-          to="/dashboard" 
-          className={`navbar-link ${isActive('/dashboard') ? 'active' : ''}`}
-        >
-          Mission Control
-        </Link>
-        <Link 
-          to="/portfolio" 
-          className={`navbar-link ${isActive('/portfolio') ? 'active' : ''}`}
-        >
-          Portfolio
-        </Link>
-        <Link 
-          to="/simulation" 
-          className={`navbar-link ${isActive('/simulation') ? 'active' : ''}`}
-        >
-          Compare
-        </Link>
-        <Link 
-          to="/portfolio?tab=watchlist" 
-          className={`navbar-link ${location.search.includes('watchlist') ? 'active' : ''}`}
-        >
-          Watchlist
-        </Link>
-        <Link 
-          to="/settings" 
-          className={`navbar-link ${isActive('/settings') ? 'active' : ''}`}
-        >
-          Settings
-        </Link>
-      </nav>
 
       <div className="navbar-right">
         <div className="navbar-search-container" style={{ position: 'relative' }}>

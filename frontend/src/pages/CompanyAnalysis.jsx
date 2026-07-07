@@ -543,14 +543,14 @@ const CompanyAnalysis = () => {
       <Sidebar />
 
       {/* Main Content Area */}
-      <main className="main-canvas" style={{ marginRight: '320px' }}>
+      <main className="main-canvas analysis-main-canvas">
         
         {/* WebGL Canvas Background */}
         <div className="page-bg-shader">
           <ShaderCanvas opacity={0.25} />
         </div>
 
-        <div className="page-container" style={{ paddingRight: '32px', paddingBottom: '96px' }}>
+        <div className="page-container analysis-page-container">
           {/* 1. Premium Company Header */}
           <section className="glass-card company-hero-card" style={{ borderRadius: '16px', display: 'flex', flexDirection: 'column', gap: '20px' }}>
             <div style={{ display: 'flex', width: '100%', justifyContent: 'space-between', flexWrap: 'wrap', gap: '16px' }}>
@@ -559,7 +559,7 @@ const CompanyAnalysis = () => {
                   {getCompanyLogo(company.ticker, company.name)}
                 </div>
                 <div className="company-hero-title-container">
-                  <div className="company-hero-title-row" style={{ display: 'flex', alignItems: 'baseline', gap: '12px' }}>
+                  <div className="company-hero-title-row" style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'baseline', gap: '12px' }}>
                     <h1 className="company-hero-name" style={{ fontSize: '32px', fontWeight: '800' }}>{company.name}</h1>
                     <span 
                       className="company-hero-ticker" 
@@ -596,7 +596,7 @@ const CompanyAnalysis = () => {
                       </span>
                     )}
                   </div>
-                  <div style={{ display: 'flex', gap: '16px', color: 'var(--outline)', fontSize: '13px', marginTop: '8px', alignItems: 'center' }}>
+                  <div className="company-hero-meta" style={{ display: 'flex', flexWrap: 'wrap', gap: '12px 16px', color: 'var(--outline)', fontSize: '13px', marginTop: '8px', alignItems: 'center' }}>
                     <span style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
                       <span style={{ fontSize: '16px' }}>
                         {company.country === 'United States' ? '🇺🇸' : company.country === 'Japan' ? '🇯🇵' : company.country === 'United Kingdom' ? '🇬🇧' : '🇮🇳'}
@@ -614,7 +614,7 @@ const CompanyAnalysis = () => {
               </div>
 
               <div style={{ display: 'flex', alignItems: 'center', gap: '32px' }}>
-                <div style={{ textAlign: 'right' }}>
+                <div className="company-price-container" style={{ textAlign: 'right' }}>
                   <p className="company-price-label">Current Price</p>
                   <p className="company-price-value" style={{ fontSize: '36px', fontWeight: '800' }}>
                     {formatCurrency(company.current_price, company.exchange)}
@@ -658,7 +658,7 @@ const CompanyAnalysis = () => {
           </section>
 
           {/* Score Breakdown & Risk Radar Row */}
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '24px', marginTop: '24px' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '24px', marginTop: '24px' }}>
             
             {/* 1. Score Breakdown */}
             <div className="glass-card" style={{ padding: '24px', borderRadius: '16px' }}>
@@ -846,7 +846,7 @@ const CompanyAnalysis = () => {
                       {isExpanded && (
                         <div style={{ marginTop: '12px', borderTop: '1px solid rgba(255,255,255,0.05)', paddingTop: '12px', fontSize: '12px', color: 'var(--outline)' }}>
                           <p style={{ marginBottom: '8px', lineHeight: '1.5' }}>{arg.description}</p>
-                          <div style={{ display: 'flex', gap: '16px', marginTop: '12px', background: 'rgba(255,255,255,0.02)', padding: '8px', borderRadius: '4px' }}>
+                          <div className="thesis-detail-tags" style={{ display: 'flex', flexWrap: 'wrap', gap: '8px 16px', marginTop: '12px', background: 'rgba(255,255,255,0.02)', padding: '8px', borderRadius: '4px' }}>
                             <div>Confidence: <span style={{ color: '#22c55e', fontWeight: '600' }}>97%</span></div>
                             <div>Evidence: <span style={{ color: '#fff' }}>Quarterly Filings</span></div>
                             <div>Sources: <span style={{ color: '#b2c5ff' }}>14 papers</span></div>
@@ -895,7 +895,7 @@ const CompanyAnalysis = () => {
                       {isExpanded && (
                         <div style={{ marginTop: '12px', borderTop: '1px solid rgba(255,255,255,0.05)', paddingTop: '12px', fontSize: '12px', color: 'var(--outline)' }}>
                           <p style={{ marginBottom: '8px', lineHeight: '1.5' }}>{arg.description}</p>
-                          <div style={{ display: 'flex', gap: '16px', marginTop: '12px', background: 'rgba(255,255,255,0.02)', padding: '8px', borderRadius: '4px' }}>
+                          <div className="thesis-detail-tags" style={{ display: 'flex', flexWrap: 'wrap', gap: '8px 16px', marginTop: '12px', background: 'rgba(255,255,255,0.02)', padding: '8px', borderRadius: '4px' }}>
                             <div>Confidence: <span style={{ color: '#ffb4ab', fontWeight: '600' }}>85%</span></div>
                             <div>Evidence: <span style={{ color: '#fff' }}>Competitor Releases</span></div>
                             <div>Sources: <span style={{ color: '#ffb874' }}>8 analyst notes</span></div>
@@ -930,7 +930,7 @@ const CompanyAnalysis = () => {
                     <p style={{ fontSize: '14px', lineHeight: '1.6', color: '#fff', margin: '0' }}>"{report.verdict}"</p>
                   </div>
 
-                  <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px' }}>
+                  <div className="verdict-reasons-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px' }}>
                     <div className="glass-card" style={{ padding: '20px', background: 'rgba(255,255,255,0.02)', borderRadius: '12px' }}>
                       <h4 style={{ color: '#22c55e', fontSize: '13px', fontWeight: '700', marginBottom: '12px', textTransform: 'uppercase' }}>Top Reasons to Invest</h4>
                       <ul style={{ display: 'flex', flexDirection: 'column', gap: '8px', paddingLeft: '20px', margin: '0', fontSize: '13px', color: 'var(--outline)' }}>
@@ -1175,7 +1175,7 @@ const CompanyAnalysis = () => {
                   </div>
                   
                   {/* Chart Interval Selector */}
-                  <div style={{ display: 'flex', gap: '4px', background: 'rgba(255,255,255,0.05)', padding: '2px', borderRadius: '6px' }}>
+                  <div className="chart-interval-selector" style={{ display: 'flex', gap: '4px', background: 'rgba(255,255,255,0.05)', padding: '2px', borderRadius: '6px' }}>
                     {['Quarterly', 'Annual', '5 Years', '10 Years'].map((interval) => (
                       <button 
                         key={interval} 
@@ -1250,7 +1250,7 @@ const CompanyAnalysis = () => {
               <h3 className="spider-title" style={{ color: '#fff', fontSize: '16px', fontWeight: '700', marginBottom: '24px' }}>Competency Spider Graph</h3>
               <div style={{ width: '100%', height: '240px' }}>
                 <ResponsiveContainer width="100%" height="100%">
-                  <RadarChart cx="50%" cy="50%" outerRadius="80%" data={
+                  <RadarChart cx="50%" cy="50%" outerRadius="60%" data={
                     (() => {
                       let rawData = report.raw_agent_data;
                       if (typeof rawData === 'string') {
@@ -1322,7 +1322,7 @@ const CompanyAnalysis = () => {
             <h3 style={{ color: '#fff', fontSize: '20px', fontWeight: '700', marginBottom: '8px' }}>AI Resource References</h3>
             <p style={{ color: 'var(--outline)', fontSize: '13px', marginBottom: '24px' }}>Verify primary sources compiled by news and financial audit nodes.</p>
             
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px' }}>
+            <div className="ai-sources-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px' }}>
               {(
                 company.exchange === 'NSE' || company.exchange === 'BSE' || company.country === 'India'
                   ? [
@@ -1367,7 +1367,7 @@ const CompanyAnalysis = () => {
           <section ref={newsRef} className="pipeline-section" style={{ background: 'transparent', padding: '0', marginTop: '48px' }}>
             <h3 className="viz-title" style={{ fontSize: '24px', marginBottom: '24px' }}>Intelligence News Feed</h3>
             
-            <div className="trending-tickers" style={{ justifyContent: 'start', gap: '24px', display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)' }}>
+            <div className="news-feed-grid" style={{ gap: '24px', display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)' }}>
               {newsItems.map((item, idx) => {
                 const isLink = item.url && item.url !== '#';
                 const CardComponent = isLink ? 'a' : 'div';
@@ -1423,134 +1423,119 @@ const CompanyAnalysis = () => {
             </div>
           </section>
 
+          {/* Right Sidebar actions panel & logs timeline */}
+          <aside className="glass-card analysis-right-sidebar">
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
+              <h4 style={{ color: '#fff', fontSize: '12px', fontWeight: '700', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Report Actions</h4>
+              
+              <button className="btn-primary" onClick={() => triggerAction('PDF')}>
+                <span className="material-symbols-outlined text-sm">picture_as_pdf</span>
+                Export PDF
+              </button>
+
+              <button className="btn-secondary" onClick={() => triggerAction('MD')}>
+                <span className="material-symbols-outlined text-sm">description</span>
+                Export Markdown
+              </button>
+              
+              <button className="btn-secondary" onClick={() => triggerAction('JSON')}>
+                <span className="material-symbols-outlined text-sm">download</span>
+                Download JSON
+              </button>
+
+              <button className="btn-outline-primary" onClick={() => triggerAction('COPY')} style={{ padding: '10px' }}>
+                <span className="material-symbols-outlined text-sm">content_copy</span>
+                Copy Full Report
+              </button>
+
+              <button className="btn-outline-primary" onClick={() => triggerAction('SHARE')} style={{ padding: '10px' }}>
+                <span className="material-symbols-outlined text-sm">share</span>
+                {shareCopied ? 'Link Copied!' : 'Share Report'}
+              </button>
+
+              <button className="btn-outline-primary" onClick={handleWatchlistToggle} style={{ padding: '10px' }}>
+                <span className="material-symbols-outlined text-sm">star</span>
+                {isWatchlisted ? 'Remove Watchlist' : 'Save Analysis'}
+              </button>
+            </div>
+
+            <div className="company-divider-y" style={{ height: '1px', width: '100%' }}></div>
+
+            {/* Live log timeline styled as terminal console */}
+            <div style={{ flex: '1', display: 'flex', flexDirection: 'column', overflow: 'hidden' }}>
+              <h4 style={{ color: '#fff', fontSize: '12px', fontWeight: '700', textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: '12px', display: 'flex', alignItems: 'center', gap: '8px' }}>
+                <span className="material-symbols-outlined text-[16px]" style={{ color: '#b2c5ff' }}>terminal</span>
+                Analysis Live Log
+              </h4>
+              
+              <div className="log-list custom-scrollbar" style={{ maxHeight: '100%', flex: '1', background: '#070911', padding: '12px', borderRadius: '8px', border: '1px solid rgba(255,255,255,0.05)', fontFamily: 'var(--font-mono)' }}>
+                {logs.length === 0 ? (
+                  <div style={{ fontSize: '11px', color: 'var(--outline)', fontStyle: 'italic' }}>Awaiting pipeline logs...</div>
+                ) : (
+                  logs.map((log, idx) => {
+                    const date = new Date(log.created_at);
+                    const timeStr = date.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+                    return (
+                      <div key={idx} className="log-item" style={{ marginBottom: '12px' }}>
+                        <span style={{ fontSize: '10px', color: 'var(--outline)' }}>[{timeStr}]</span>
+                        <div className="log-body" style={{ marginLeft: '0', marginTop: '2px' }}>
+                          <span className="log-message success" style={{ color: log.log_level === 'ERROR' ? '#ffb4ab' : log.log_level === 'WARN' ? '#ffb874' : '#22c55e', fontSize: '11px', fontWeight: '600' }}>
+                            ✓ {log.agent_name.toUpperCase().replace(' ', '_')}
+                          </span>
+                          <span className="log-detail" style={{ display: 'block', fontSize: '10px', color: 'var(--outline)' }}>{log.message}</span>
+                        </div>
+                      </div>
+                    );
+                  })
+                )}
+              </div>
+            </div>
+
+            <div className="company-divider-y" style={{ height: '1px', width: '100%', margin: '16px 0' }}></div>
+
+            {/* Search History list sidebar */}
+            <div style={{ maxHeight: '200px', display: 'flex', flexDirection: 'column', overflow: 'hidden' }}>
+              <h4 style={{ color: '#fff', fontSize: '12px', fontWeight: '700', textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: '12px', display: 'flex', alignItems: 'center', gap: '8px' }}>
+                <span className="material-symbols-outlined text-[16px]" style={{ color: '#b2c5ff' }}>history</span>
+                Search History
+              </h4>
+              <div className="log-list custom-scrollbar" style={{ overflowY: 'auto', flex: '1', background: '#070911', padding: '12px', borderRadius: '8px', border: '1px solid rgba(255,255,255,0.05)' }}>
+                {historyList.length === 0 ? (
+                  <div style={{ fontSize: '11px', color: 'var(--outline)', fontStyle: 'italic' }}>No search history yet.</div>
+                ) : (
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+                    {historyList.map((item, idx) => (
+                      <div 
+                        key={idx} 
+                        onClick={() => navigate(`/analysis/${item.ticker}`)}
+                        style={{ 
+                          display: 'flex', 
+                          justifyContent: 'space-between', 
+                          alignItems: 'center', 
+                          padding: '8px 12px', 
+                          borderRadius: '6px', 
+                          background: item.ticker === ticker.toUpperCase() ? 'rgba(178, 197, 255, 0.1)' : 'rgba(255, 255, 255, 0.02)', 
+                          cursor: 'pointer',
+                          border: '1px solid rgba(255,255,255,0.03)',
+                          transition: 'all 0.2s ease'
+                        }}
+                        onMouseEnter={(e) => e.currentTarget.style.background = 'rgba(178, 197, 255, 0.15)'}
+                        onMouseLeave={(e) => e.currentTarget.style.background = item.ticker === ticker.toUpperCase() ? 'rgba(178, 197, 255, 0.1)' : 'rgba(255, 255, 255, 0.02)'}
+                      >
+                        <span style={{ fontSize: '12px', fontWeight: '700', color: '#fff' }}>{item.ticker}</span>
+                        <span style={{ fontSize: '10px', color: 'var(--outline)' }}>{new Date(item.created_at || item.searched_at || Date.now()).toLocaleDateString()}</span>
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </div>
+            </div>
+          </aside>
+
           {/* Footer */}
           <Footer />
         </div>
       </main>
-
-      {/* Right Sidebar actions panel & logs timeline */}
-      <aside 
-        className="glass-card"
-        style={{
-          position: 'fixed',
-          right: '24px',
-          top: '96px',
-          bottom: '96px',
-          width: '300px',
-          borderRadius: '16px',
-          padding: '24px',
-          display: 'flex',
-          flexDirection: 'column',
-          gap: '24px',
-          overflowY: 'auto'
-        }}
-      >
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
-          <h4 style={{ color: '#fff', fontSize: '12px', fontWeight: '700', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Report Actions</h4>
-          
-          <button className="btn-primary" onClick={() => triggerAction('PDF')}>
-            <span className="material-symbols-outlined text-sm">picture_as_pdf</span>
-            Export PDF
-          </button>
-
-          <button className="btn-secondary" onClick={() => triggerAction('MD')}>
-            <span className="material-symbols-outlined text-sm">description</span>
-            Export Markdown
-          </button>
-          
-          <button className="btn-secondary" onClick={() => triggerAction('JSON')}>
-            <span className="material-symbols-outlined text-sm">download</span>
-            Download JSON
-          </button>
-
-          <button className="btn-outline-primary" onClick={() => triggerAction('COPY')} style={{ padding: '10px' }}>
-            <span className="material-symbols-outlined text-sm">content_copy</span>
-            Copy Full Report
-          </button>
-
-          <button className="btn-outline-primary" onClick={() => triggerAction('SHARE')} style={{ padding: '10px' }}>
-            <span className="material-symbols-outlined text-sm">share</span>
-            {shareCopied ? 'Link Copied!' : 'Share Report'}
-          </button>
-
-          <button className="btn-outline-primary" onClick={handleWatchlistToggle} style={{ padding: '10px' }}>
-            <span className="material-symbols-outlined text-sm">star</span>
-            {isWatchlisted ? 'Remove Watchlist' : 'Save Analysis'}
-          </button>
-        </div>
-
-        <div className="company-divider-y" style={{ height: '1px', width: '100%' }}></div>
-
-        {/* Live log timeline styled as terminal console */}
-        <div style={{ flex: '1', display: 'flex', flexDirection: 'column', overflow: 'hidden' }}>
-          <h4 style={{ color: '#fff', fontSize: '12px', fontWeight: '700', textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: '12px', display: 'flex', alignItems: 'center', gap: '8px' }}>
-            <span className="material-symbols-outlined text-[16px]" style={{ color: '#b2c5ff' }}>terminal</span>
-            Analysis Live Log
-          </h4>
-          
-          <div className="log-list custom-scrollbar" style={{ maxHeight: '100%', flex: '1', background: '#070911', padding: '12px', borderRadius: '8px', border: '1px solid rgba(255,255,255,0.05)', fontFamily: 'var(--font-mono)' }}>
-            {logs.length === 0 ? (
-              <div style={{ fontSize: '11px', color: 'var(--outline)', fontStyle: 'italic' }}>Awaiting pipeline logs...</div>
-            ) : (
-              logs.map((log, idx) => {
-                const date = new Date(log.created_at);
-                const timeStr = date.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' });
-                return (
-                  <div key={idx} className="log-item" style={{ marginBottom: '12px' }}>
-                    <span style={{ fontSize: '10px', color: 'var(--outline)' }}>[{timeStr}]</span>
-                    <div className="log-body" style={{ marginLeft: '0', marginTop: '2px' }}>
-                      <span className="log-message success" style={{ color: log.log_level === 'ERROR' ? '#ffb4ab' : log.log_level === 'WARN' ? '#ffb874' : '#22c55e', fontSize: '11px', fontWeight: '600' }}>
-                        ✓ {log.agent_name.toUpperCase().replace(' ', '_')}
-                      </span>
-                      <span className="log-detail" style={{ display: 'block', fontSize: '10px', color: 'var(--outline)' }}>{log.message}</span>
-                    </div>
-                  </div>
-                );
-              })
-            )}
-          </div>
-        </div>
-
-        <div className="company-divider-y" style={{ height: '1px', width: '100%', margin: '16px 0' }}></div>
-
-        {/* Search History list sidebar */}
-        <div style={{ maxHeight: '200px', display: 'flex', flexDirection: 'column', overflow: 'hidden' }}>
-          <h4 style={{ color: '#fff', fontSize: '12px', fontWeight: '700', textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: '12px', display: 'flex', alignItems: 'center', gap: '8px' }}>
-            <span className="material-symbols-outlined text-[16px]" style={{ color: '#b2c5ff' }}>history</span>
-            Search History
-          </h4>
-          <div className="log-list custom-scrollbar" style={{ overflowY: 'auto', flex: '1', background: '#070911', padding: '12px', borderRadius: '8px', border: '1px solid rgba(255,255,255,0.05)' }}>
-            {historyList.length === 0 ? (
-              <div style={{ fontSize: '11px', color: 'var(--outline)', fontStyle: 'italic' }}>No search history yet.</div>
-            ) : (
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
-                {historyList.map((item, idx) => (
-                  <div 
-                    key={idx} 
-                    onClick={() => navigate(`/analysis/${item.ticker}`)}
-                    style={{ 
-                      display: 'flex', 
-                      justifyContent: 'space-between', 
-                      alignItems: 'center', 
-                      padding: '8px 12px', 
-                      borderRadius: '6px', 
-                      background: item.ticker === ticker.toUpperCase() ? 'rgba(178, 197, 255, 0.1)' : 'rgba(255, 255, 255, 0.02)', 
-                      cursor: 'pointer',
-                      border: '1px solid rgba(255,255,255,0.03)',
-                      transition: 'all 0.2s ease'
-                    }}
-                    onMouseEnter={(e) => e.currentTarget.style.background = 'rgba(178, 197, 255, 0.15)'}
-                    onMouseLeave={(e) => e.currentTarget.style.background = item.ticker === ticker.toUpperCase() ? 'rgba(178, 197, 255, 0.1)' : 'rgba(255, 255, 255, 0.02)'}
-                  >
-                    <span style={{ fontSize: '12px', fontWeight: '700', color: '#fff' }}>{item.ticker}</span>
-                    <span style={{ fontSize: '10px', color: 'var(--outline)' }}>{new Date(item.created_at || item.searched_at || Date.now()).toLocaleDateString()}</span>
-                  </div>
-                ))}
-              </div>
-            )}
-          </div>
-        </div>
-      </aside>
 
       {/* Confirmation Dialog Modal Widget */}
       {showConfirm && (

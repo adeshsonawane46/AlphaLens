@@ -276,7 +276,7 @@ const SimulationLab = () => {
                 </p>
               </div>
 
-              <div style={{ width: '100%', display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '16px', marginTop: '32px' }}>
+              <div className="simulation-metrics-grid" style={{ width: '100%', display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '16px', marginTop: '32px' }}>
                 <div style={{ padding: '16px', background: '#0c0e15', borderRadius: '12px', border: '1px solid rgba(255,255,255,0.05)', textAlign: 'center' }}>
                   <p style={{ color: '#8d909f', fontSize: '12px', marginBottom: '4px' }}>Price Target</p>
                   <p style={{ color: '#fff', fontSize: '20px', fontWeight: '700' }}>${priceTarget}</p>
@@ -297,7 +297,7 @@ const SimulationLab = () => {
               </div>
             </div>
 
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '32px' }}>
+            <div className="simulation-probability-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '32px' }}>
               
               <div className="glass-card" style={{ padding: '24px', borderRadius: '16px', position: 'relative', overflow: 'hidden' }}>
                 <h4 style={{ color: '#c6c6cf', fontSize: '14px', marginBottom: '16px', display: 'flex', alignItems: 'center', gap: '8px' }}>

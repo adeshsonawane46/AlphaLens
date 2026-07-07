@@ -149,18 +149,26 @@ async function initMysql() {
 
   try {
     // 1. Initial connection to make sure the database exists
-    const tempConnection = await mysql.createConnection(config);
+    const tempConnection = await mysql.createConnection({
+    ...config,
+    ssl: {
+      rejectUnauthorized: false
+    }
+    });
     await tempConnection.query(`CREATE DATABASE IF NOT EXISTS \`${process.env.DB_NAME || 'alphalens'}\``);
     await tempConnection.end();
 
     // 2. Setup the connection pool with the database specified
     pool = mysql.createPool({
-      ...config,
-      database: process.env.DB_NAME || 'alphalens',
-      waitForConnections: true,
-      connectionLimit: 10,
-      queueLimit: 0,
-      multipleStatements: true
+    ...config,
+    database: process.env.DB_NAME || "defaultdb",
+    waitForConnections: true,
+    connectionLimit: 10,
+    queueLimit: 0,
+    multipleStatements: true,
+    ssl: {
+      rejectUnauthorized: false
+    }
     });
 
     // 3. Test connection pool

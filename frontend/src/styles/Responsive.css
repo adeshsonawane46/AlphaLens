@@ -1,7 +1,107 @@
 @import './Variables.css';
 
+/* Baseline/Default styles for Company Analysis Page layout refactor */
+.analysis-main-canvas {
+  margin-right: 320px;
+  transition: margin var(--transition-normal);
+}
+
+.analysis-right-sidebar {
+  position: fixed;
+  right: 24px;
+  top: 96px;
+  bottom: 96px;
+  width: 300px;
+  border-radius: 16px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  overflow-y: auto;
+  z-index: 40;
+  background: rgba(17, 19, 26, 0.8) !important;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+.analysis-page-container {
+  padding-right: 32px;
+  padding-bottom: 96px;
+}
+
+.news-feed-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+/* Fix Recharts layout resizing overflows globally */
+.chart-card {
+  min-width: 0 !important;
+}
+
+/* Medium Screens / Tablets (max-width: 1199px) */
+@media (max-width: 1199px) {
+  .analysis-main-canvas {
+    margin-right: 0 !important;
+  }
+
+  .analysis-right-sidebar {
+    position: static !important;
+    width: 100% !important;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    height: auto !important;
+    max-height: none !important;
+    overflow-y: visible !important;
+  }
+
+  .analysis-page-container {
+    padding-right: var(--margin-mobile) !important;
+  }
+}
+
+/* Tablet & Mobile navigation bar and grid overrides */
+@media (max-width: 1023px) {
+  .navbar {
+    padding: 0 var(--margin-tablet) !important; /* Prevents logo/avatar from hitting screen edges */
+  }
+
+  .mobile-nav {
+    position: fixed !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    height: 56px !important;
+    z-index: 9999 !important;
+    display: flex !important;
+    background: rgba(29, 31, 38, 0.95) !important;
+  }
+
+  .mobile-nav-btn {
+    gap: 2px !important;
+    font-size: 9px !important;
+  }
+
+  .mobile-nav-btn span {
+    font-size: 18px !important; /* Clean, premium smaller navigation icons */
+  }
+  
+  .verdict-reasons-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .news-feed-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
 /* Handle padding constraints on mobile screens */
 @media (max-width: 767px) {
+  .navbar {
+    padding: 0 var(--margin-mobile) !important; /* Safe padding for small device viewports */
+  }
+
   .page-container {
     padding-top: 80px;
     padding-bottom: 80px; /* space for mobile nav bar */
@@ -25,6 +125,191 @@
 
   .margin-readouts-left, .margin-readouts-right {
     display: none; /* Hide margin data logs on mobile */
+  }
+
+  /* Landing Page mobile spacing improvements */
+  .hero-section {
+    padding-top: 64px !important;
+    padding-bottom: 32px !important;
+    min-height: auto !important;
+    height: auto !important;
+  }
+
+  .hero-title {
+    font-size: 28px !important;
+    margin-bottom: 12px !important;
+  }
+
+  .hero-desc {
+    font-size: 14px !important;
+    margin-bottom: 16px !important;
+    line-height: 1.5 !important;
+  }
+
+  .hero-features-grid {
+    margin-bottom: 16px !important;
+    gap: 12px !important;
+    font-size: 12px !important;
+  }
+
+  .hero-search-wrapper {
+    margin-bottom: 16px !important;
+  }
+
+  .hero-search-box {
+    padding: 6px !important;
+  }
+
+  .hero-search-input {
+    padding: 12px 0 !important;
+    font-size: 14px !important;
+  }
+
+  .hero-search-btn {
+    padding: 12px 24px !important;
+    font-size: 14px !important;
+  }
+
+  /* Horizontally scrollable chips for trending stocks on mobile */
+  .trending-tickers {
+    flex-wrap: nowrap !important;
+    justify-content: flex-start !important;
+    overflow-x: auto !important;
+    width: 100% !important;
+    padding: 8px 4px !important;
+    margin-top: 12px !important;
+    -ms-overflow-style: none !important;  /* IE and Edge */
+    scrollbar-width: none !important;  /* Firefox */
+  }
+
+  .trending-tickers::-webkit-scrollbar {
+    display: none !important; /* Chrome, Safari and Opera */
+  }
+
+  .trending-label {
+    white-space: nowrap !important;
+    font-size: 12px !important;
+    margin-right: 8px !important;
+  }
+
+  .ticker-chip {
+    flex-shrink: 0 !important;
+    padding: 4px 12px !important;
+    font-size: 12px !important;
+  }
+
+  /* Company Analysis Header and Card mobile fixes */
+  .company-hero-card {
+    padding: 16px !important;
+  }
+
+  .company-hero-left {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 16px !important;
+  }
+
+  .company-hero-name {
+    font-size: 24px !important;
+    line-height: 1.2 !important;
+  }
+
+  .company-hero-title-row {
+    flex-wrap: wrap !important;
+    gap: 8px !important;
+  }
+
+  .company-hero-meta {
+    gap: 8px 12px !important;
+    font-size: 12px !important;
+  }
+
+  .company-price-container {
+    text-align: left !important;
+    margin-top: 16px !important;
+  }
+
+  .company-price-value {
+    font-size: 28px !important;
+  }
+
+  .premium-verdict-card {
+    padding: 16px !important;
+  }
+
+  .verdict-grid-premium {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 12px !important;
+  }
+
+  /* AI Committee Pipeline scrollable row on mobile */
+  .pipeline-row {
+    overflow-x: auto !important;
+    padding: 12px 4px !important;
+    gap: 20px !important;
+    justify-content: flex-start !important;
+    -ms-overflow-style: none !important;
+    scrollbar-width: none !important;
+  }
+
+  .pipeline-row::-webkit-scrollbar {
+    display: none !important;
+  }
+
+  .pipeline-line {
+    width: 600px !important; /* Force connecting line to match scrolled width */
+  }
+
+  .pipeline-step {
+    flex-shrink: 0 !important;
+  }
+
+  /* Simulation Lab metrics and probability layouts */
+  .simulation-metrics-grid {
+    grid-template-columns: 1fr !important;
+    gap: 12px !important;
+  }
+
+  .simulation-probability-grid {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+  }
+
+  /* Grid metrics wrap rules on small viewports */
+  .market-metrics-grid {
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)) !important;
+  }
+
+  .score-breakdown-grid {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)) !important;
+    gap: 16px !important;
+  }
+
+  .ai-sources-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .news-feed-grid {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+  }
+
+  /* Chart card and interval selector mobile fixes */
+  .chart-card-header {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 12px !important;
+  }
+
+  .chart-interval-selector {
+    flex-wrap: wrap !important;
+    width: 100% !important;
+  }
+
+  .chart-interval-selector button {
+    flex: 1 1 auto !important;
+    padding: 4px 6px !important;
+    font-size: 10px !important;
   }
 }
 
