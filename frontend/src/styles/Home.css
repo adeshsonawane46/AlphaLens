@@ -25,6 +25,7 @@
   inset: 0;
   pointer-events: none;
   overflow: hidden;
+  display: none;
 }
 
 .floating-card-1 {
@@ -561,6 +562,9 @@
 }
 
 @media (min-width: 1024px) {
+  .floating-cards-container {
+    display: block;
+  }
   .viz-container {
     grid-template-cols: 1fr 1fr;
     gap: var(--stack-lg);

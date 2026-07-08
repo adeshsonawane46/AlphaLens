@@ -83,14 +83,14 @@
       "ticker": "MSFT",
       "name": "Microsoft Corp.",
       "sector": "Technology",
-      "current_price": 2450.5,
-      "price_change": 0.85,
-      "market_cap": "₹ 18.2 Lakh Crore",
+      "current_price": 388.84,
+      "price_change": -21.88,
+      "market_cap": "$15.0 Billion",
       "exchange": "NASDAQ",
       "bse_code": null,
       "industry": "Software & Services",
       "country": "United States",
-      "updated_at": "2026-07-06T12:56:53.998Z"
+      "updated_at": "2026-07-08T11:08:22.518Z"
     },
     {
       "id": 7,
@@ -729,6 +729,34 @@
       "bear_arguments": "[{\"title\":\"Headwinds in US Banking Sector\",\"description\":\"Western banking and financial clients are deferring multi-year discretionary cloud modernization contracts.\"}]",
       "raw_agent_data": "{\"financial\":{\"currentPrice\":3845.6,\"priceChangePercent\":1.82,\"open\":\"₹ 3,820.00\",\"high\":\"₹ 3,865.00\",\"low\":\"₹ 3,805.00\",\"previousClose\":\"₹ 3,815.00\",\"marketCap\":\"₹ 13.9 Lakh Crore\",\"peRatio\":\"28.5x\",\"eps\":\"₹ 134.93\",\"divYield\":\"1.15%\",\"bookValue\":\"₹ 480.00\",\"fiftyTwoWeekHigh\":\"₹ 4,250.00\",\"fiftyTwoWeekLow\":\"₹ 3,150.00\",\"volume\":1200000,\"averageVolume\":1500000,\"sharesOutstanding\":3660000000,\"ceo\":\"K. Krithivasan\",\"marketStatus\":\"CLOSED\",\"revenue\":\"₹ 2,40,000 Crore\",\"netProfit\":\"₹ 46,000 Crore\",\"roe\":\"30.5%\",\"debtToEquity\":\"0.02\",\"growthScore\":9,\"radarData\":[{\"subject\":\"Growth\",\"value\":82},{\"subject\":\"Moat\",\"value\":95},{\"subject\":\"Value\",\"value\":60},{\"subject\":\"Risk\",\"value\":30},{\"subject\":\"Innovation\",\"value\":80},{\"subject\":\"Financial Strength\",\"value\":98}],\"logs\":[\"SEC filings and NSE disclosures parsed.\",\"Operating margins stable at 26.2% verified.\"],\"liveFin\":{\"currentPrice\":3845.6,\"priceChangePercent\":1.82,\"fiftyTwoWeekHigh\":4250,\"fiftyTwoWeekLow\":3150,\"chartsData\":{\"Quarterly\":[{\"name\":\"Mar 26\",\"value\":3580.06},{\"name\":\"Apr 26\",\"value\":3607.33},{\"name\":\"May 26\",\"value\":3670.47},{\"name\":\"Jun 26\",\"value\":3859.75},{\"name\":\"Jul 26\",\"value\":3833.35}],\"Annual\":[{\"name\":\"Aug 25\",\"value\":3291.46},{\"name\":\"Sept 25\",\"value\":3182.44},{\"name\":\"Oct 25\",\"value\":3348.33},{\"name\":\"Nov 25\",\"value\":3308.16},{\"name\":\"Dec 25\",\"value\":3411.39},{\"name\":\"Jan 26\",\"value\":3515.86},{\"name\":\"Feb 26\",\"value\":3571.76},{\"name\":\"Mar 26\",\"value\":3547.76},{\"name\":\"Apr 26\",\"value\":3768.68},{\"name\":\"May 26\",\"value\":3680.85},{\"name\":\"Jun 26\",\"value\":3744.89},{\"name\":\"Jul 26\",\"value\":3763.19}],\"5 Years\":[{\"name\":\"Aug 21\",\"value\":2692.96},{\"name\":\"Sept 21\",\"value\":2794.72},{\"name\":\"Oct 21\",\"value\":2731.13},{\"name\":\"Nov 21\",\"value\":2679.29},{\"name\":\"Dec 21\",\"value\":2730.4},{\"name\":\"Jan 22\",\"value\":2877.84},{\"name\":\"Feb 22\",\"value\":2744.21},{\"name\":\"Mar 22\",\"value\":2822.73},{\"name\":\"Apr 22\",\"value\":2818.11},{\"name\":\"May 22\",\"value\":2922.39},{\"name\":\"Jun 22\",\"value\":2849.32},{\"name\":\"Jul 22\",\"value\":2912.26},{\"name\":\"Aug 22\",\"value\":2970.93},{\"name\":\"Sept 22\",\"value\":3012.52},{\"name\":\"Oct 22\",\"value\":3027.42},{\"name\":\"Nov 22\",\"value\":2941.27},{\"name\":\"Dec 22\",\"value\":2930.81},{\"name\":\"Jan 23\",\"value\":3126.27},{\"name\":\"Feb 23\",\"value\":3114.43},{\"name\":\"Mar 23\",\"value\":3043.61},{\"name\":\"Apr 23\",\"value\":3002.26},{\"name\":\"May 23\",\"value\":3026.15},{\"name\":\"Jun 23\",\"value\":3198.68},{\"name\":\"Jul 23\",\"value\":3126.29},{\"name\":\"Aug 23\",\"value\":3103.62},{\"name\":\"Sept 23\",\"value\":3170.21},{\"name\":\"Oct 23\",\"value\":3300.1},{\"name\":\"Nov 23\",\"value\":3262.26},{\"name\":\"Dec 23\",\"value\":3178.04},{\"name\":\"Jan 24\",\"value\":3191.83},{\"name\":\"Feb 24\",\"value\":3198.97},{\"name\":\"Mar 24\",\"value\":3272.53},{\"name\":\"Apr 24\",\"value\":3259.05},{\"name\":\"May 24\",\"value\":3285.15},{\"name\":\"Jun 24\",\"value\":3289.68},{\"name\":\"Jul 24\",\"value\":3389.11},{\"name\":\"Aug 24\",\"value\":3496.8},{\"name\":\"Sept 24\",\"value\":3512.02},{\"name\":\"Oct 24\",\"value\":3369.98},{\"name\":\"Nov 24\",\"value\":3398.42},{\"name\":\"Dec 24\",\"value\":3546.25},{\"name\":\"Jan 25\",\"value\":3507.32},{\"name\":\"Feb 25\",\"value\":3540.09},{\"name\":\"Mar 25\",\"value\":3445.04},{\"name\":\"Apr 25\",\"value\":3566.47},{\"name\":\"May 25\",\"value\":3499.42},{\"name\":\"Jun 25\",\"value\":3660.87},{\"name\":\"Jul 25\",\"value\":3707.33},{\"name\":\"Aug 25\",\"value\":3628.18},{\"name\":\"Sept 25\",\"value\":3682.46},{\"name\":\"Oct 25\",\"value\":3579.75},{\"name\":\"Nov 25\",\"value\":3715.42},{\"name\":\"Dec 25\",\"value\":3694.47},{\"name\":\"Jan 26\",\"value\":3738.15},{\"name\":\"Feb 26\",\"value\":3764.81},{\"name\":\"Mar 26\",\"value\":3696.77},{\"name\":\"Apr 26\",\"value\":3767.14},{\"name\":\"May 26\",\"value\":3732.88},{\"name\":\"Jun 26\",\"value\":3809.59},{\"name\":\"Jul 26\",\"value\":3923.62}],\"10 Years\":[{\"name\":\"Aug 16\",\"value\":2435.2},{\"name\":\"Sept 16\",\"value\":2461.6},{\"name\":\"Oct 16\",\"value\":2447.34},{\"name\":\"Nov 16\",\"value\":2549.53},{\"name\":\"Dec 16\",\"value\":2432.25},{\"name\":\"Jan 17\",\"value\":2492.78},{\"name\":\"Feb 17\",\"value\":2627.63},{\"name\":\"Mar 17\",\"value\":2629.07},{\"name\":\"Apr 17\",\"value\":2655.94},{\"name\":\"May 17\",\"value\":2628.87},{\"name\":\"Jun 17\",\"value\":2548.23},{\"name\":\"Jul 17\",\"value\":2564.93},{\"name\":\"Aug 17\",\"value\":2673.41},{\"name\":\"Sept 17\",\"value\":2714.86},{\"name\":\"Oct 17\",\"value\":2682.77},{\"name\":\"Nov 17\",\"value\":2645.38},{\"name\":\"Dec 17\",\"value\":2628.52},{\"name\":\"Jan 18\",\"value\":2660.5},{\"name\":\"Feb 18\",\"value\":2675.47},{\"name\":\"Mar 18\",\"value\":2740.3},{\"name\":\"Apr 18\",\"value\":2751.46},{\"name\":\"May 18\",\"value\":2691.53},{\"name\":\"Jun 18\",\"value\":2631.15},{\"name\":\"Jul 18\",\"value\":2832.02},{\"name\":\"Aug 18\",\"value\":2765.11},{\"name\":\"Sept 18\",\"value\":2768.43},{\"name\":\"Oct 18\",\"value\":2783.47},{\"name\":\"Nov 18\",\"value\":2721.98},{\"name\":\"Dec 18\",\"value\":2848.69},{\"name\":\"Jan 19\",\"value\":2735.08},{\"name\":\"Feb 19\",\"value\":2822.09},{\"name\":\"Mar 19\",\"value\":2907.55},{\"name\":\"Apr 19\",\"value\":2747.5},{\"name\":\"May 19\",\"value\":2766.7},{\"name\":\"Jun 19\",\"value\":2930.65},{\"name\":\"Jul 19\",\"value\":2971.46},{\"name\":\"Aug 19\",\"value\":2885.44},{\"name\":\"Sept 19\",\"value\":2809.88},{\"name\":\"Oct 19\",\"value\":2816.99},{\"name\":\"Nov 19\",\"value\":3016.17},{\"name\":\"Dec 19\",\"value\":2997.62},{\"name\":\"Jan 20\",\"value\":3021.47},{\"name\":\"Feb 20\",\"value\":3041.07},{\"name\":\"Mar 20\",\"value\":3016.36},{\"name\":\"Apr 20\",\"value\":2900.94},{\"name\":\"May 20\",\"value\":3067.35},{\"name\":\"Jun 20\",\"value\":2946.04},{\"name\":\"Jul 20\",\"value\":3034.43},{\"name\":\"Aug 20\",\"value\":3106.19},{\"name\":\"Sept 20\",\"value\":3013.03},{\"name\":\"Oct 20\",\"value\":2996.2},{\"name\":\"Nov 20\",\"value\":3019.27},{\"name\":\"Dec 20\",\"value\":2980.57},{\"name\":\"Jan 21\",\"value\":3019.16},{\"name\":\"Feb 21\",\"value\":3056.76},{\"name\":\"Mar 21\",\"value\":3199.59},{\"name\":\"Apr 21\",\"value\":3120.56},{\"name\":\"May 21\",\"value\":3180.14},{\"name\":\"Jun 21\",\"value\":3170.77},{\"name\":\"Jul 21\",\"value\":3189.57},{\"name\":\"Aug 21\",\"value\":3211.14},{\"name\":\"Sept 21\",\"value\":3142.47},{\"name\":\"Oct 21\",\"value\":3100.77},{\"name\":\"Nov 21\",\"value\":3181.37},{\"name\":\"Dec 21\",\"value\":3241.74},{\"name\":\"Jan 22\",\"value\":3230.29},{\"name\":\"Feb 22\",\"value\":3313.28},{\"name\":\"Mar 22\",\"value\":3258.09},{\"name\":\"Apr 22\",\"value\":3241.84},{\"name\":\"May 22\",\"value\":3270.07},{\"name\":\"Jun 22\",\"value\":3271.38},{\"name\":\"Jul 22\",\"value\":3330.76},{\"name\":\"Aug 22\",\"value\":3385.01},{\"name\":\"Sept 22\",\"value\":3363.05},{\"name\":\"Oct 22\",\"value\":3416.19},{\"name\":\"Nov 22\",\"value\":3281.62},{\"name\":\"Dec 22\",\"value\":3322.09},{\"name\":\"Jan 23\",\"value\":3348.46},{\"name\":\"Feb 23\",\"value\":3295.21},{\"name\":\"Mar 23\",\"value\":3362.56},{\"name\":\"Apr 23\",\"value\":3411.62},{\"name\":\"May 23\",\"value\":3425.08},{\"name\":\"Jun 23\",\"value\":3471.56},{\"name\":\"Jul 23\",\"value\":3426.25},{\"name\":\"Aug 23\",\"value\":3359.66},{\"name\":\"Sept 23\",\"value\":3375.41},{\"name\":\"Oct 23\",\"value\":3526.37},{\"name\":\"Nov 23\",\"value\":3406.05},{\"name\":\"Dec 23\",\"value\":3402.8},{\"name\":\"Jan 24\",\"value\":3517.84},{\"name\":\"Feb 24\",\"value\":3468.46},{\"name\":\"Mar 24\",\"value\":3441.53},{\"name\":\"Apr 24\",\"value\":3628.88},{\"name\":\"May 24\",\"value\":3546.83},{\"name\":\"Jun 24\",\"value\":3627.6},{\"name\":\"Jul 24\",\"value\":3510.99},{\"name\":\"Aug 24\",\"value\":3653.98},{\"name\":\"Sept 24\",\"value\":3496.64},{\"name\":\"Oct 24\",\"value\":3671.92},{\"name\":\"Nov 24\",\"value\":3553.41},{\"name\":\"Dec 24\",\"value\":3648.22},{\"name\":\"Jan 25\",\"value\":3726.37},{\"name\":\"Feb 25\",\"value\":3678.75},{\"name\":\"Mar 25\",\"value\":3725.24},{\"name\":\"Apr 25\",\"value\":3726.35},{\"name\":\"May 25\",\"value\":3673.83},{\"name\":\"Jun 25\",\"value\":3732.27},{\"name\":\"Jul 25\",\"value\":3667.35},{\"name\":\"Aug 25\",\"value\":3795.02},{\"name\":\"Sept 25\",\"value\":3754.07},{\"name\":\"Oct 25\",\"value\":3804.87},{\"name\":\"Nov 25\",\"value\":3778.24},{\"name\":\"Dec 25\",\"value\":3758.14},{\"name\":\"Jan 26\",\"value\":3759.28},{\"name\":\"Feb 26\",\"value\":3765.14},{\"name\":\"Mar 26\",\"value\":3778.75},{\"name\":\"Apr 26\",\"value\":3765.32},{\"name\":\"May 26\",\"value\":3869.66},{\"name\":\"Jun 26\",\"value\":3872.98},{\"name\":\"Jul 26\",\"value\":3933.96}]},\"open\":3820,\"high\":3865,\"low\":3805,\"previousClose\":3815,\"volume\":1200000,\"averageVolume\":1500000,\"peRatio\":28.5,\"eps\":134.93,\"dividendYield\":1.15,\"sharesOutstanding\":3660000000,\"ceo\":\"K. Krithivasan\",\"marketStatus\":\"CLOSED\",\"lastUpdatedTime\":\"6/7/2026, 7:10:46 pm\",\"currency\":\"INR\",\"exchange\":\"NSE\"},\"charts\":{\"Quarterly\":[{\"name\":\"Mar 26\",\"value\":3580.06},{\"name\":\"Apr 26\",\"value\":3607.33},{\"name\":\"May 26\",\"value\":3670.47},{\"name\":\"Jun 26\",\"value\":3859.75},{\"name\":\"Jul 26\",\"value\":3833.35}],\"Annual\":[{\"name\":\"Aug 25\",\"value\":3291.46},{\"name\":\"Sept 25\",\"value\":3182.44},{\"name\":\"Oct 25\",\"value\":3348.33},{\"name\":\"Nov 25\",\"value\":3308.16},{\"name\":\"Dec 25\",\"value\":3411.39},{\"name\":\"Jan 26\",\"value\":3515.86},{\"name\":\"Feb 26\",\"value\":3571.76},{\"name\":\"Mar 26\",\"value\":3547.76},{\"name\":\"Apr 26\",\"value\":3768.68},{\"name\":\"May 26\",\"value\":3680.85},{\"name\":\"Jun 26\",\"value\":3744.89},{\"name\":\"Jul 26\",\"value\":3763.19}],\"5 Years\":[{\"name\":\"Aug 21\",\"value\":2692.96},{\"name\":\"Sept 21\",\"value\":2794.72},{\"name\":\"Oct 21\",\"value\":2731.13},{\"name\":\"Nov 21\",\"value\":2679.29},{\"name\":\"Dec 21\",\"value\":2730.4},{\"name\":\"Jan 22\",\"value\":2877.84},{\"name\":\"Feb 22\",\"value\":2744.21},{\"name\":\"Mar 22\",\"value\":2822.73},{\"name\":\"Apr 22\",\"value\":2818.11},{\"name\":\"May 22\",\"value\":2922.39},{\"name\":\"Jun 22\",\"value\":2849.32},{\"name\":\"Jul 22\",\"value\":2912.26},{\"name\":\"Aug 22\",\"value\":2970.93},{\"name\":\"Sept 22\",\"value\":3012.52},{\"name\":\"Oct 22\",\"value\":3027.42},{\"name\":\"Nov 22\",\"value\":2941.27},{\"name\":\"Dec 22\",\"value\":2930.81},{\"name\":\"Jan 23\",\"value\":3126.27},{\"name\":\"Feb 23\",\"value\":3114.43},{\"name\":\"Mar 23\",\"value\":3043.61},{\"name\":\"Apr 23\",\"value\":3002.26},{\"name\":\"May 23\",\"value\":3026.15},{\"name\":\"Jun 23\",\"value\":3198.68},{\"name\":\"Jul 23\",\"value\":3126.29},{\"name\":\"Aug 23\",\"value\":3103.62},{\"name\":\"Sept 23\",\"value\":3170.21},{\"name\":\"Oct 23\",\"value\":3300.1},{\"name\":\"Nov 23\",\"value\":3262.26},{\"name\":\"Dec 23\",\"value\":3178.04},{\"name\":\"Jan 24\",\"value\":3191.83},{\"name\":\"Feb 24\",\"value\":3198.97},{\"name\":\"Mar 24\",\"value\":3272.53},{\"name\":\"Apr 24\",\"value\":3259.05},{\"name\":\"May 24\",\"value\":3285.15},{\"name\":\"Jun 24\",\"value\":3289.68},{\"name\":\"Jul 24\",\"value\":3389.11},{\"name\":\"Aug 24\",\"value\":3496.8},{\"name\":\"Sept 24\",\"value\":3512.02},{\"name\":\"Oct 24\",\"value\":3369.98},{\"name\":\"Nov 24\",\"value\":3398.42},{\"name\":\"Dec 24\",\"value\":3546.25},{\"name\":\"Jan 25\",\"value\":3507.32},{\"name\":\"Feb 25\",\"value\":3540.09},{\"name\":\"Mar 25\",\"value\":3445.04},{\"name\":\"Apr 25\",\"value\":3566.47},{\"name\":\"May 25\",\"value\":3499.42},{\"name\":\"Jun 25\",\"value\":3660.87},{\"name\":\"Jul 25\",\"value\":3707.33},{\"name\":\"Aug 25\",\"value\":3628.18},{\"name\":\"Sept 25\",\"value\":3682.46},{\"name\":\"Oct 25\",\"value\":3579.75},{\"name\":\"Nov 25\",\"value\":3715.42},{\"name\":\"Dec 25\",\"value\":3694.47},{\"name\":\"Jan 26\",\"value\":3738.15},{\"name\":\"Feb 26\",\"value\":3764.81},{\"name\":\"Mar 26\",\"value\":3696.77},{\"name\":\"Apr 26\",\"value\":3767.14},{\"name\":\"May 26\",\"value\":3732.88},{\"name\":\"Jun 26\",\"value\":3809.59},{\"name\":\"Jul 26\",\"value\":3923.62}],\"10 Years\":[{\"name\":\"Aug 16\",\"value\":2435.2},{\"name\":\"Sept 16\",\"value\":2461.6},{\"name\":\"Oct 16\",\"value\":2447.34},{\"name\":\"Nov 16\",\"value\":2549.53},{\"name\":\"Dec 16\",\"value\":2432.25},{\"name\":\"Jan 17\",\"value\":2492.78},{\"name\":\"Feb 17\",\"value\":2627.63},{\"name\":\"Mar 17\",\"value\":2629.07},{\"name\":\"Apr 17\",\"value\":2655.94},{\"name\":\"May 17\",\"value\":2628.87},{\"name\":\"Jun 17\",\"value\":2548.23},{\"name\":\"Jul 17\",\"value\":2564.93},{\"name\":\"Aug 17\",\"value\":2673.41},{\"name\":\"Sept 17\",\"value\":2714.86},{\"name\":\"Oct 17\",\"value\":2682.77},{\"name\":\"Nov 17\",\"value\":2645.38},{\"name\":\"Dec 17\",\"value\":2628.52},{\"name\":\"Jan 18\",\"value\":2660.5},{\"name\":\"Feb 18\",\"value\":2675.47},{\"name\":\"Mar 18\",\"value\":2740.3},{\"name\":\"Apr 18\",\"value\":2751.46},{\"name\":\"May 18\",\"value\":2691.53},{\"name\":\"Jun 18\",\"value\":2631.15},{\"name\":\"Jul 18\",\"value\":2832.02},{\"name\":\"Aug 18\",\"value\":2765.11},{\"name\":\"Sept 18\",\"value\":2768.43},{\"name\":\"Oct 18\",\"value\":2783.47},{\"name\":\"Nov 18\",\"value\":2721.98},{\"name\":\"Dec 18\",\"value\":2848.69},{\"name\":\"Jan 19\",\"value\":2735.08},{\"name\":\"Feb 19\",\"value\":2822.09},{\"name\":\"Mar 19\",\"value\":2907.55},{\"name\":\"Apr 19\",\"value\":2747.5},{\"name\":\"May 19\",\"value\":2766.7},{\"name\":\"Jun 19\",\"value\":2930.65},{\"name\":\"Jul 19\",\"value\":2971.46},{\"name\":\"Aug 19\",\"value\":2885.44},{\"name\":\"Sept 19\",\"value\":2809.88},{\"name\":\"Oct 19\",\"value\":2816.99},{\"name\":\"Nov 19\",\"value\":3016.17},{\"name\":\"Dec 19\",\"value\":2997.62},{\"name\":\"Jan 20\",\"value\":3021.47},{\"name\":\"Feb 20\",\"value\":3041.07},{\"name\":\"Mar 20\",\"value\":3016.36},{\"name\":\"Apr 20\",\"value\":2900.94},{\"name\":\"May 20\",\"value\":3067.35},{\"name\":\"Jun 20\",\"value\":2946.04},{\"name\":\"Jul 20\",\"value\":3034.43},{\"name\":\"Aug 20\",\"value\":3106.19},{\"name\":\"Sept 20\",\"value\":3013.03},{\"name\":\"Oct 20\",\"value\":2996.2},{\"name\":\"Nov 20\",\"value\":3019.27},{\"name\":\"Dec 20\",\"value\":2980.57},{\"name\":\"Jan 21\",\"value\":3019.16},{\"name\":\"Feb 21\",\"value\":3056.76},{\"name\":\"Mar 21\",\"value\":3199.59},{\"name\":\"Apr 21\",\"value\":3120.56},{\"name\":\"May 21\",\"value\":3180.14},{\"name\":\"Jun 21\",\"value\":3170.77},{\"name\":\"Jul 21\",\"value\":3189.57},{\"name\":\"Aug 21\",\"value\":3211.14},{\"name\":\"Sept 21\",\"value\":3142.47},{\"name\":\"Oct 21\",\"value\":3100.77},{\"name\":\"Nov 21\",\"value\":3181.37},{\"name\":\"Dec 21\",\"value\":3241.74},{\"name\":\"Jan 22\",\"value\":3230.29},{\"name\":\"Feb 22\",\"value\":3313.28},{\"name\":\"Mar 22\",\"value\":3258.09},{\"name\":\"Apr 22\",\"value\":3241.84},{\"name\":\"May 22\",\"value\":3270.07},{\"name\":\"Jun 22\",\"value\":3271.38},{\"name\":\"Jul 22\",\"value\":3330.76},{\"name\":\"Aug 22\",\"value\":3385.01},{\"name\":\"Sept 22\",\"value\":3363.05},{\"name\":\"Oct 22\",\"value\":3416.19},{\"name\":\"Nov 22\",\"value\":3281.62},{\"name\":\"Dec 22\",\"value\":3322.09},{\"name\":\"Jan 23\",\"value\":3348.46},{\"name\":\"Feb 23\",\"value\":3295.21},{\"name\":\"Mar 23\",\"value\":3362.56},{\"name\":\"Apr 23\",\"value\":3411.62},{\"name\":\"May 23\",\"value\":3425.08},{\"name\":\"Jun 23\",\"value\":3471.56},{\"name\":\"Jul 23\",\"value\":3426.25},{\"name\":\"Aug 23\",\"value\":3359.66},{\"name\":\"Sept 23\",\"value\":3375.41},{\"name\":\"Oct 23\",\"value\":3526.37},{\"name\":\"Nov 23\",\"value\":3406.05},{\"name\":\"Dec 23\",\"value\":3402.8},{\"name\":\"Jan 24\",\"value\":3517.84},{\"name\":\"Feb 24\",\"value\":3468.46},{\"name\":\"Mar 24\",\"value\":3441.53},{\"name\":\"Apr 24\",\"value\":3628.88},{\"name\":\"May 24\",\"value\":3546.83},{\"name\":\"Jun 24\",\"value\":3627.6},{\"name\":\"Jul 24\",\"value\":3510.99},{\"name\":\"Aug 24\",\"value\":3653.98},{\"name\":\"Sept 24\",\"value\":3496.64},{\"name\":\"Oct 24\",\"value\":3671.92},{\"name\":\"Nov 24\",\"value\":3553.41},{\"name\":\"Dec 24\",\"value\":3648.22},{\"name\":\"Jan 25\",\"value\":3726.37},{\"name\":\"Feb 25\",\"value\":3678.75},{\"name\":\"Mar 25\",\"value\":3725.24},{\"name\":\"Apr 25\",\"value\":3726.35},{\"name\":\"May 25\",\"value\":3673.83},{\"name\":\"Jun 25\",\"value\":3732.27},{\"name\":\"Jul 25\",\"value\":3667.35},{\"name\":\"Aug 25\",\"value\":3795.02},{\"name\":\"Sept 25\",\"value\":3754.07},{\"name\":\"Oct 25\",\"value\":3804.87},{\"name\":\"Nov 25\",\"value\":3778.24},{\"name\":\"Dec 25\",\"value\":3758.14},{\"name\":\"Jan 26\",\"value\":3759.28},{\"name\":\"Feb 26\",\"value\":3765.14},{\"name\":\"Mar 26\",\"value\":3778.75},{\"name\":\"Apr 26\",\"value\":3765.32},{\"name\":\"May 26\",\"value\":3869.66},{\"name\":\"Jun 26\",\"value\":3872.98},{\"name\":\"Jul 26\",\"value\":3933.96}]}},\"news\":[{\"headline\":\"TCS Secures Large IT Infrastructure Deal in UK\",\"summary\":\"TCS signs $800M digital transformation agreement with a UK utility provider.\",\"sentiment\":\"POSITIVE\",\"publishedAt\":\"1h ago\"},{\"headline\":\"BFSI Spending Guidance Remains Muted in USA\",\"summary\":\"High interest rates continue to restrict discretionary cloud spend.\",\"sentiment\":\"CAUTION\",\"publishedAt\":\"7h ago\"}],\"competitor\":{\"competitors\":[{\"name\":\"Infosys Ltd.\",\"ticker\":\"INFY.NS\",\"revenue\":\"₹ 1,56,000 Cr\",\"marketCap\":\"₹ 6.5 Lakh Cr\",\"peRatio\":\"26.2\",\"growth\":\"+10% YoY\",\"risk\":\"Low\",\"aiRecommendation\":\"Buy\"},{\"name\":\"Wipro Ltd.\",\"ticker\":\"WIPRO.NS\",\"revenue\":\"₹ 90,000 Cr\",\"marketCap\":\"₹ 2.4 Lakh Cr\",\"peRatio\":\"21.5\",\"growth\":\"+5% YoY\",\"risk\":\"Medium\",\"aiRecommendation\":\"Hold\"},{\"name\":\"Accenture plc\",\"ticker\":\"ACN\",\"revenue\":\"$64B\",\"marketCap\":\"$220B\",\"peRatio\":\"28.4\",\"growth\":\"+8% YoY\",\"risk\":\"Low\",\"aiRecommendation\":\"Buy\"}],\"summary\":\"TCS remains the efficiency and operating margin benchmark in the global IT services industry.\",\"logs\":[\"Found global listed IT services competitors.\",\"Benchmarked EBITDA and utilization metrics.\"]},\"technical\":{\"rsi\":\"48 (Neutral)\",\"macd\":\"Neutral (Consolidating)\",\"sma20\":\"Below SMA20 (Neutral)\",\"sma50\":\"Above SMA50 (Bullish)\",\"sma200\":\"Above SMA200 (Long-term Bullish)\",\"supportLevel\":\"₹ 3,750\",\"resistanceLevel\":\"₹ 3,920\",\"trend\":\"Sideways\",\"logs\":[\"Parsed TCS trading patterns.\",\"Consolidation pattern confirmed.\"]},\"risk\":{\"financialRisk\":20,\"businessRisk\":30,\"marketRisk\":35,\"competitiveRisk\":25,\"executionRisk\":25,\"complianceScore\":\"95%\",\"geopoliticalRisk\":\"Low\",\"regulatoryRisk\":\"Medium\",\"logs\":[\"Risk matrices computed.\",\"SEBI/SEC compliance checklists passed.\"]},\"critic\":{\"feedback\":\"The Bull thesis relies heavily on hardware cycles. Monitor consumer confidence indices.\",\"score\":\"97.2%\"},\"outputJson\":{\"company\":\"Tata Consultancy Services Ltd.\",\"ticker\":\"TCS\",\"sector\":\"Information Technology\",\"industry\":\"IT Services\",\"recommendation\":\"Buy\",\"investmentScore\":89,\"confidence\":91,\"timeHorizon\":\"Medium\",\"riskLevel\":\"Medium-Low\",\"currentPrice\":3845.6,\"marketCap\":\"₹ 13.9 Lakh Crore\",\"financialHealth\":{\"peRatio\":\"28.5x\",\"eps\":\"₹ 134.93\",\"roe\":\"30.5%\",\"debtToEquity\":\"0.02\"},\"bullCase\":[\"Top-tier ROE exceeding 30% with robust cash conversion\",\"Large contract wins in UK and European utilities\"],\"bearCase\":[\"Muted spending from US financial sector clients\",\"Margin pressures due to generative AI talent acquisition\"],\"riskAnalysis\":{\"financialRisk\":15,\"businessRisk\":20,\"marketRisk\":35,\"competitiveRisk\":25,\"executionRisk\":20},\"latestNews\":[\"UK utilities $800M digitisation contract\",\"AI Mastercraft Integration\"],\"judgeVerdict\":\"TCS is a premier defensive pick for Indian portfolios. Robust return profile and zero-debt structure outweigh short-term US tech budgets compression.\",\"summary\":\"Top-tier IT services leader with exceptional return profile.\",\"logs\":[\"Consensus signed.\",\"Chief Justice verdict registered.\"]}}",
       "created_at": "2026-07-06T13:40:47.407Z"
+    },
+    {
+      "id": 50,
+      "company_id": 6,
+      "alphalens_score": 78,
+      "ai_confidence": 80,
+      "conviction": "Buy",
+      "time_horizon": "Long",
+      "risk_level": "High",
+      "verdict": "Microsoft Corp. represents a compelling investment opportunity. The company exhibits robust profitability, a clean capital structure (Debt/Equity: 0.74), and a leading position in Technology. Despite sector headwinds, strong competitive advantages justify a buy rating.",
+      "bull_arguments": "[{\"title\":\"Strong Contract Pipeline\",\"description\":\"Microsoft Corp. continues to win major digital transformation contracts, providing clear revenue visibility over the next 12-24 months.\"},{\"title\":\"Robust Return Ratios\",\"description\":\"A strong balance sheet and high return on equity demonstrate excellent capital allocation efficiency.\"}]",
+      "bear_arguments": "[{\"title\":\"Macroeconomic Spending Slowdown\",\"description\":\"High inflation and interest rates globally may cause enterprise clients to defer discretionary IT and tech expansion budgets.\"},{\"title\":\"Margin Pressure from Talent Costs\",\"description\":\"Rising wage bills and competitive hiring for specialized skills could restrict near-term operating margin expansion.\"}]",
+      "raw_agent_data": "{\"financial\":{\"currentPrice\":388.84,\"priceChangePercent\":0.85,\"open\":\"$ 388.22\",\"high\":\"$ 395.57\",\"low\":\"$ 388.22\",\"previousClose\":\"$ 497.72\",\"marketCap\":\"$15.0 Billion\",\"peRatio\":\"33.4x\",\"eps\":\"$ 11.60\",\"divYield\":\"0.70%\",\"bookValue\":\"$ 14.50\",\"fiftyTwoWeekHigh\":\"$ 555.45\",\"fiftyTwoWeekLow\":\"$ 349.20\",\"volume\":22000000,\"averageVolume\":24000000,\"sharesOutstanding\":7430000000,\"ceo\":\"Satya Nadella\",\"marketStatus\":\"CLOSED\",\"revenue\":\"$ 245.0 Billion\",\"netProfit\":\"$ 88.0 Billion\",\"roe\":\"38.5%\",\"debtToEquity\":\"0.28\",\"growthScore\":9,\"radarData\":[{\"subject\":\"Growth\",\"value\":85},{\"subject\":\"Moat\",\"value\":95},{\"subject\":\"Value\",\"value\":55},{\"subject\":\"Risk\",\"value\":20},{\"subject\":\"Innovation\",\"value\":92},{\"subject\":\"Financial Strength\",\"value\":95}],\"logs\":[\"SEC disclosures and MSFT financials loaded.\",\"Azure growth metrics validated.\"],\"liveFin\":{\"currentPrice\":388.84,\"priceChangePercent\":-21.88,\"marketCap\":\"$15.0 Billion\",\"currency\":\"USD\",\"exchange\":\"NasdaqGS\",\"open\":388.22,\"previousClose\":497.72,\"high\":395.57,\"low\":388.22,\"fiftyTwoWeekHigh\":555.45,\"fiftyTwoWeekLow\":349.2,\"volume\":29039552,\"averageVolume\":29039552,\"peRatio\":33.4,\"eps\":11.6,\"dividendYield\":0.7,\"sharesOutstanding\":7430000000,\"sector\":\"Technology\",\"industry\":\"Software & Services\",\"ceo\":\"Satya Nadella\",\"country\":\"United States\",\"marketStatus\":\"CLOSED\",\"lastUpdatedTime\":\"8/7/2026, 4:38:15 pm\",\"chartsData\":{\"Quarterly\":[{\"name\":\"15 Jun 26\",\"value\":379.4},{\"name\":\"22 Jun 26\",\"value\":372.97},{\"name\":\"29 Jun 26\",\"value\":390.49},{\"name\":\"06 Jul 26\",\"value\":388.84},{\"name\":\"08 Jul 26\",\"value\":388.84}],\"Annual\":[{\"name\":\"27 Apr 26\",\"value\":414.44},{\"name\":\"04 May 26\",\"value\":415.12},{\"name\":\"11 May 26\",\"value\":421.92},{\"name\":\"18 May 26\",\"value\":418.57},{\"name\":\"25 May 26\",\"value\":450.24},{\"name\":\"01 Jun 26\",\"value\":416.67},{\"name\":\"08 Jun 26\",\"value\":390.74},{\"name\":\"15 Jun 26\",\"value\":379.4},{\"name\":\"22 Jun 26\",\"value\":372.97},{\"name\":\"29 Jun 26\",\"value\":390.49},{\"name\":\"06 Jul 26\",\"value\":388.84},{\"name\":\"08 Jul 26\",\"value\":388.84}],\"5 Years\":[{\"name\":\"07 Jul 25\",\"value\":503.32},{\"name\":\"14 Jul 25\",\"value\":510.05},{\"name\":\"21 Jul 25\",\"value\":513.71},{\"name\":\"28 Jul 25\",\"value\":524.11},{\"name\":\"04 Aug 25\",\"value\":522.04},{\"name\":\"11 Aug 25\",\"value\":520.17},{\"name\":\"18 Aug 25\",\"value\":507.23},{\"name\":\"25 Aug 25\",\"value\":506.69},{\"name\":\"01 Sept 25\",\"value\":495},{\"name\":\"08 Sept 25\",\"value\":509.9},{\"name\":\"15 Sept 25\",\"value\":517.93},{\"name\":\"22 Sept 25\",\"value\":511.46},{\"name\":\"29 Sept 25\",\"value\":517.35},{\"name\":\"06 Oct 25\",\"value\":510.96},{\"name\":\"13 Oct 25\",\"value\":513.58},{\"name\":\"20 Oct 25\",\"value\":523.61},{\"name\":\"27 Oct 25\",\"value\":517.81},{\"name\":\"03 Nov 25\",\"value\":496.82},{\"name\":\"10 Nov 25\",\"value\":510.18},{\"name\":\"17 Nov 25\",\"value\":472.12},{\"name\":\"24 Nov 25\",\"value\":492.01},{\"name\":\"01 Dec 25\",\"value\":483.16},{\"name\":\"08 Dec 25\",\"value\":478.53},{\"name\":\"15 Dec 25\",\"value\":485.92},{\"name\":\"22 Dec 25\",\"value\":487.71},{\"name\":\"29 Dec 25\",\"value\":472.94},{\"name\":\"05 Jan 26\",\"value\":479.28},{\"name\":\"12 Jan 26\",\"value\":459.86},{\"name\":\"19 Jan 26\",\"value\":465.95},{\"name\":\"26 Jan 26\",\"value\":430.29},{\"name\":\"02 Feb 26\",\"value\":401.14},{\"name\":\"09 Feb 26\",\"value\":401.32},{\"name\":\"16 Feb 26\",\"value\":397.23},{\"name\":\"23 Feb 26\",\"value\":392.74},{\"name\":\"02 Mar 26\",\"value\":408.96},{\"name\":\"09 Mar 26\",\"value\":395.55},{\"name\":\"16 Mar 26\",\"value\":381.87},{\"name\":\"23 Mar 26\",\"value\":356.77},{\"name\":\"30 Mar 26\",\"value\":373.46},{\"name\":\"06 Apr 26\",\"value\":370.87},{\"name\":\"13 Apr 26\",\"value\":422.79},{\"name\":\"20 Apr 26\",\"value\":424.62},{\"name\":\"27 Apr 26\",\"value\":414.44},{\"name\":\"04 May 26\",\"value\":415.12},{\"name\":\"11 May 26\",\"value\":421.92},{\"name\":\"18 May 26\",\"value\":418.57},{\"name\":\"25 May 26\",\"value\":450.24},{\"name\":\"01 Jun 26\",\"value\":416.67},{\"name\":\"08 Jun 26\",\"value\":390.74},{\"name\":\"15 Jun 26\",\"value\":379.4},{\"name\":\"22 Jun 26\",\"value\":372.97},{\"name\":\"29 Jun 26\",\"value\":390.49},{\"name\":\"06 Jul 26\",\"value\":388.84},{\"name\":\"08 Jul 26\",\"value\":388.84}],\"10 Years\":[{\"name\":\"07 Jul 25\",\"value\":503.32},{\"name\":\"14 Jul 25\",\"value\":510.05},{\"name\":\"21 Jul 25\",\"value\":513.71},{\"name\":\"28 Jul 25\",\"value\":524.11},{\"name\":\"04 Aug 25\",\"value\":522.04},{\"name\":\"11 Aug 25\",\"value\":520.17},{\"name\":\"18 Aug 25\",\"value\":507.23},{\"name\":\"25 Aug 25\",\"value\":506.69},{\"name\":\"01 Sept 25\",\"value\":495},{\"name\":\"08 Sept 25\",\"value\":509.9},{\"name\":\"15 Sept 25\",\"value\":517.93},{\"name\":\"22 Sept 25\",\"value\":511.46},{\"name\":\"29 Sept 25\",\"value\":517.35},{\"name\":\"06 Oct 25\",\"value\":510.96},{\"name\":\"13 Oct 25\",\"value\":513.58},{\"name\":\"20 Oct 25\",\"value\":523.61},{\"name\":\"27 Oct 25\",\"value\":517.81},{\"name\":\"03 Nov 25\",\"value\":496.82},{\"name\":\"10 Nov 25\",\"value\":510.18},{\"name\":\"17 Nov 25\",\"value\":472.12},{\"name\":\"24 Nov 25\",\"value\":492.01},{\"name\":\"01 Dec 25\",\"value\":483.16},{\"name\":\"08 Dec 25\",\"value\":478.53},{\"name\":\"15 Dec 25\",\"value\":485.92},{\"name\":\"22 Dec 25\",\"value\":487.71},{\"name\":\"29 Dec 25\",\"value\":472.94},{\"name\":\"05 Jan 26\",\"value\":479.28},{\"name\":\"12 Jan 26\",\"value\":459.86},{\"name\":\"19 Jan 26\",\"value\":465.95},{\"name\":\"26 Jan 26\",\"value\":430.29},{\"name\":\"02 Feb 26\",\"value\":401.14},{\"name\":\"09 Feb 26\",\"value\":401.32},{\"name\":\"16 Feb 26\",\"value\":397.23},{\"name\":\"23 Feb 26\",\"value\":392.74},{\"name\":\"02 Mar 26\",\"value\":408.96},{\"name\":\"09 Mar 26\",\"value\":395.55},{\"name\":\"16 Mar 26\",\"value\":381.87},{\"name\":\"23 Mar 26\",\"value\":356.77},{\"name\":\"30 Mar 26\",\"value\":373.46},{\"name\":\"06 Apr 26\",\"value\":370.87},{\"name\":\"13 Apr 26\",\"value\":422.79},{\"name\":\"20 Apr 26\",\"value\":424.62},{\"name\":\"27 Apr 26\",\"value\":414.44},{\"name\":\"04 May 26\",\"value\":415.12},{\"name\":\"11 May 26\",\"value\":421.92},{\"name\":\"18 May 26\",\"value\":418.57},{\"name\":\"25 May 26\",\"value\":450.24},{\"name\":\"01 Jun 26\",\"value\":416.67},{\"name\":\"08 Jun 26\",\"value\":390.74},{\"name\":\"15 Jun 26\",\"value\":379.4},{\"name\":\"22 Jun 26\",\"value\":372.97},{\"name\":\"29 Jun 26\",\"value\":390.49},{\"name\":\"06 Jul 26\",\"value\":388.84},{\"name\":\"08 Jul 26\",\"value\":388.84}]}},\"charts\":{\"Quarterly\":[{\"name\":\"15 Jun 26\",\"value\":379.4},{\"name\":\"22 Jun 26\",\"value\":372.97},{\"name\":\"29 Jun 26\",\"value\":390.49},{\"name\":\"06 Jul 26\",\"value\":388.84},{\"name\":\"08 Jul 26\",\"value\":388.84}],\"Annual\":[{\"name\":\"27 Apr 26\",\"value\":414.44},{\"name\":\"04 May 26\",\"value\":415.12},{\"name\":\"11 May 26\",\"value\":421.92},{\"name\":\"18 May 26\",\"value\":418.57},{\"name\":\"25 May 26\",\"value\":450.24},{\"name\":\"01 Jun 26\",\"value\":416.67},{\"name\":\"08 Jun 26\",\"value\":390.74},{\"name\":\"15 Jun 26\",\"value\":379.4},{\"name\":\"22 Jun 26\",\"value\":372.97},{\"name\":\"29 Jun 26\",\"value\":390.49},{\"name\":\"06 Jul 26\",\"value\":388.84},{\"name\":\"08 Jul 26\",\"value\":388.84}],\"5 Years\":[{\"name\":\"07 Jul 25\",\"value\":503.32},{\"name\":\"14 Jul 25\",\"value\":510.05},{\"name\":\"21 Jul 25\",\"value\":513.71},{\"name\":\"28 Jul 25\",\"value\":524.11},{\"name\":\"04 Aug 25\",\"value\":522.04},{\"name\":\"11 Aug 25\",\"value\":520.17},{\"name\":\"18 Aug 25\",\"value\":507.23},{\"name\":\"25 Aug 25\",\"value\":506.69},{\"name\":\"01 Sept 25\",\"value\":495},{\"name\":\"08 Sept 25\",\"value\":509.9},{\"name\":\"15 Sept 25\",\"value\":517.93},{\"name\":\"22 Sept 25\",\"value\":511.46},{\"name\":\"29 Sept 25\",\"value\":517.35},{\"name\":\"06 Oct 25\",\"value\":510.96},{\"name\":\"13 Oct 25\",\"value\":513.58},{\"name\":\"20 Oct 25\",\"value\":523.61},{\"name\":\"27 Oct 25\",\"value\":517.81},{\"name\":\"03 Nov 25\",\"value\":496.82},{\"name\":\"10 Nov 25\",\"value\":510.18},{\"name\":\"17 Nov 25\",\"value\":472.12},{\"name\":\"24 Nov 25\",\"value\":492.01},{\"name\":\"01 Dec 25\",\"value\":483.16},{\"name\":\"08 Dec 25\",\"value\":478.53},{\"name\":\"15 Dec 25\",\"value\":485.92},{\"name\":\"22 Dec 25\",\"value\":487.71},{\"name\":\"29 Dec 25\",\"value\":472.94},{\"name\":\"05 Jan 26\",\"value\":479.28},{\"name\":\"12 Jan 26\",\"value\":459.86},{\"name\":\"19 Jan 26\",\"value\":465.95},{\"name\":\"26 Jan 26\",\"value\":430.29},{\"name\":\"02 Feb 26\",\"value\":401.14},{\"name\":\"09 Feb 26\",\"value\":401.32},{\"name\":\"16 Feb 26\",\"value\":397.23},{\"name\":\"23 Feb 26\",\"value\":392.74},{\"name\":\"02 Mar 26\",\"value\":408.96},{\"name\":\"09 Mar 26\",\"value\":395.55},{\"name\":\"16 Mar 26\",\"value\":381.87},{\"name\":\"23 Mar 26\",\"value\":356.77},{\"name\":\"30 Mar 26\",\"value\":373.46},{\"name\":\"06 Apr 26\",\"value\":370.87},{\"name\":\"13 Apr 26\",\"value\":422.79},{\"name\":\"20 Apr 26\",\"value\":424.62},{\"name\":\"27 Apr 26\",\"value\":414.44},{\"name\":\"04 May 26\",\"value\":415.12},{\"name\":\"11 May 26\",\"value\":421.92},{\"name\":\"18 May 26\",\"value\":418.57},{\"name\":\"25 May 26\",\"value\":450.24},{\"name\":\"01 Jun 26\",\"value\":416.67},{\"name\":\"08 Jun 26\",\"value\":390.74},{\"name\":\"15 Jun 26\",\"value\":379.4},{\"name\":\"22 Jun 26\",\"value\":372.97},{\"name\":\"29 Jun 26\",\"value\":390.49},{\"name\":\"06 Jul 26\",\"value\":388.84},{\"name\":\"08 Jul 26\",\"value\":388.84}],\"10 Years\":[{\"name\":\"07 Jul 25\",\"value\":503.32},{\"name\":\"14 Jul 25\",\"value\":510.05},{\"name\":\"21 Jul 25\",\"value\":513.71},{\"name\":\"28 Jul 25\",\"value\":524.11},{\"name\":\"04 Aug 25\",\"value\":522.04},{\"name\":\"11 Aug 25\",\"value\":520.17},{\"name\":\"18 Aug 25\",\"value\":507.23},{\"name\":\"25 Aug 25\",\"value\":506.69},{\"name\":\"01 Sept 25\",\"value\":495},{\"name\":\"08 Sept 25\",\"value\":509.9},{\"name\":\"15 Sept 25\",\"value\":517.93},{\"name\":\"22 Sept 25\",\"value\":511.46},{\"name\":\"29 Sept 25\",\"value\":517.35},{\"name\":\"06 Oct 25\",\"value\":510.96},{\"name\":\"13 Oct 25\",\"value\":513.58},{\"name\":\"20 Oct 25\",\"value\":523.61},{\"name\":\"27 Oct 25\",\"value\":517.81},{\"name\":\"03 Nov 25\",\"value\":496.82},{\"name\":\"10 Nov 25\",\"value\":510.18},{\"name\":\"17 Nov 25\",\"value\":472.12},{\"name\":\"24 Nov 25\",\"value\":492.01},{\"name\":\"01 Dec 25\",\"value\":483.16},{\"name\":\"08 Dec 25\",\"value\":478.53},{\"name\":\"15 Dec 25\",\"value\":485.92},{\"name\":\"22 Dec 25\",\"value\":487.71},{\"name\":\"29 Dec 25\",\"value\":472.94},{\"name\":\"05 Jan 26\",\"value\":479.28},{\"name\":\"12 Jan 26\",\"value\":459.86},{\"name\":\"19 Jan 26\",\"value\":465.95},{\"name\":\"26 Jan 26\",\"value\":430.29},{\"name\":\"02 Feb 26\",\"value\":401.14},{\"name\":\"09 Feb 26\",\"value\":401.32},{\"name\":\"16 Feb 26\",\"value\":397.23},{\"name\":\"23 Feb 26\",\"value\":392.74},{\"name\":\"02 Mar 26\",\"value\":408.96},{\"name\":\"09 Mar 26\",\"value\":395.55},{\"name\":\"16 Mar 26\",\"value\":381.87},{\"name\":\"23 Mar 26\",\"value\":356.77},{\"name\":\"30 Mar 26\",\"value\":373.46},{\"name\":\"06 Apr 26\",\"value\":370.87},{\"name\":\"13 Apr 26\",\"value\":422.79},{\"name\":\"20 Apr 26\",\"value\":424.62},{\"name\":\"27 Apr 26\",\"value\":414.44},{\"name\":\"04 May 26\",\"value\":415.12},{\"name\":\"11 May 26\",\"value\":421.92},{\"name\":\"18 May 26\",\"value\":418.57},{\"name\":\"25 May 26\",\"value\":450.24},{\"name\":\"01 Jun 26\",\"value\":416.67},{\"name\":\"08 Jun 26\",\"value\":390.74},{\"name\":\"15 Jun 26\",\"value\":379.4},{\"name\":\"22 Jun 26\",\"value\":372.97},{\"name\":\"29 Jun 26\",\"value\":390.49},{\"name\":\"06 Jul 26\",\"value\":388.84},{\"name\":\"08 Jul 26\",\"value\":388.84}]}},\"news\":[{\"headline\":\"Microsoft Corp. Secures Large Digital Infrastructure Deal\",\"summary\":\"Microsoft Corp. announced a major multi-year digital transformation and cloud operations agreement with a global enterprise.\",\"sentiment\":\"POSITIVE\",\"publishedAt\":\"1h ago\",\"source\":\"Reuters\",\"url\":\"#\"},{\"headline\":\"Analysts Maintain Positive Outlook on Microsoft Corp.\",\"summary\":\"Market analysts highlight strong contract pipelines and solid execution capabilities for Microsoft Corp..\",\"sentiment\":\"POSITIVE\",\"publishedAt\":\"4h ago\",\"source\":\"Bloomberg\",\"url\":\"#\"}],\"competitor\":{\"competitors\":[{\"name\":\"Apple Inc.\",\"ticker\":\"AAPL\",\"revenue\":\"$385B\",\"marketCap\":\"$3.28T\",\"peRatio\":\"31.2\",\"growth\":\"+15% YoY\",\"risk\":\"Low\",\"aiRecommendation\":\"Buy\"},{\"name\":\"Alphabet Inc.\",\"ticker\":\"GOOGL\",\"revenue\":\"$305B\",\"marketCap\":\"$2.1T\",\"peRatio\":\"24.5\",\"growth\":\"+12% YoY\",\"risk\":\"Low\",\"aiRecommendation\":\"Buy\"},{\"name\":\"Amazon.com Inc.\",\"ticker\":\"AMZN\",\"revenue\":\"$570B\",\"marketCap\":\"$1.9T\",\"peRatio\":\"42.1\",\"growth\":\"+18% YoY\",\"risk\":\"Medium\",\"aiRecommendation\":\"Buy\"}],\"summary\":\"Microsoft maintains strong competitive positioning in enterprise software and cloud infrastructure.\",\"logs\":[\"Found key software & cloud peers.\",\"Benchmarked Azure vs AWS vs GCP.\"]},\"technical\":{\"rsi\":\"58 (Neutral/Bullish)\",\"macd\":\"Bullish (Azure growth correlation)\",\"sma20\":\"Above SMA20 (Bullish)\",\"sma50\":\"Above SMA50 (Bullish)\",\"sma200\":\"Above SMA200 (Long-term Bullish)\",\"supportLevel\":\"$430\",\"resistanceLevel\":\"$455\",\"trend\":\"Bullish\",\"logs\":[\"Parsed MSFT charts.\",\"Support at $430 holds firm.\"]},\"risk\":{\"financialRisk\":20,\"businessRisk\":30,\"marketRisk\":35,\"competitiveRisk\":25,\"executionRisk\":25,\"complianceScore\":\"95%\",\"geopoliticalRisk\":\"Low\",\"regulatoryRisk\":\"Medium\",\"logs\":[\"Risk matrices computed.\",\"Compliance checklist for Microsoft Corp. passed.\"]},\"critic\":{\"feedback\":\"Re-verify customer spending metrics for Microsoft Corp..\",\"score\":\"97.2%\"},\"outputJson\":{\"company\":\"Microsoft Corp.\",\"ticker\":\"MSFT\",\"sector\":\"Technology\",\"industry\":\"Software & Services\",\"recommendation\":\"Buy\",\"investmentScore\":78,\"confidence\":80,\"timeHorizon\":\"Long\",\"riskLevel\":\"High\",\"currentPrice\":388.84,\"marketCap\":\"$15.0 Billion\",\"financialHealth\":{\"peRatio\":\"25x\",\"eps\":\"$ 15.55\",\"roe\":\"27%\",\"debtToEquity\":\"0.74\"},\"bullCase\":[\"Strong business momentum with expanding market share in Technology.\",\"High return on equity of 27% coupled with healthy cash conversion rates.\"],\"bearCase\":[\"Potential headwind from global macroeconomic contraction affecting client budgets.\",\"Competitive pricing pressures in Software & Services capping gross margins.\"],\"riskAnalysis\":{\"financialRisk\":34,\"businessRisk\":58,\"marketRisk\":32,\"competitiveRisk\":56,\"executionRisk\":30},\"latestNews\":[\"Microsoft Corp. Secures Large Digital Infrastructure Deal\",\"Analysts Maintain Positive Outlook on Microsoft Corp.\"],\"judgeVerdict\":\"Microsoft Corp. represents a compelling investment opportunity. The company exhibits robust profitability, a clean capital structure (Debt/Equity: 0.74), and a leading position in Technology. Despite sector headwinds, strong competitive advantages justify a buy rating.\",\"summary\":\"Growth compounder with high capital efficiency.\",\"logs\":[\"Consensus signed.\",\"Chief Justice verdict registered.\"]}}",
+      "created_at": "2026-07-08T11:08:22.051Z"
+    },
+    {
+      "id": 51,
+      "company_id": 6,
+      "alphalens_score": 78,
+      "ai_confidence": 80,
+      "conviction": "Buy",
+      "time_horizon": "Long",
+      "risk_level": "High",
+      "verdict": "Microsoft Corp. represents a compelling investment opportunity. The company exhibits robust profitability, a clean capital structure (Debt/Equity: 0.74), and a leading position in Technology. Despite sector headwinds, strong competitive advantages justify a buy rating.",
+      "bull_arguments": "[{\"title\":\"Strong Contract Pipeline\",\"description\":\"Microsoft Corp. continues to win major digital transformation contracts, providing clear revenue visibility over the next 12-24 months.\"},{\"title\":\"Robust Return Ratios\",\"description\":\"A strong balance sheet and high return on equity demonstrate excellent capital allocation efficiency.\"}]",
+      "bear_arguments": "[{\"title\":\"Macroeconomic Spending Slowdown\",\"description\":\"High inflation and interest rates globally may cause enterprise clients to defer discretionary IT and tech expansion budgets.\"},{\"title\":\"Margin Pressure from Talent Costs\",\"description\":\"Rising wage bills and competitive hiring for specialized skills could restrict near-term operating margin expansion.\"}]",
+      "raw_agent_data": "{\"financial\":{\"currentPrice\":388.84,\"priceChangePercent\":0.85,\"open\":\"$ 388.22\",\"high\":\"$ 395.57\",\"low\":\"$ 388.22\",\"previousClose\":\"$ 497.72\",\"marketCap\":\"$15.0 Billion\",\"peRatio\":\"33.4x\",\"eps\":\"$ 11.60\",\"divYield\":\"0.70%\",\"bookValue\":\"$ 14.50\",\"fiftyTwoWeekHigh\":\"$ 555.45\",\"fiftyTwoWeekLow\":\"$ 349.20\",\"volume\":22000000,\"averageVolume\":24000000,\"sharesOutstanding\":7430000000,\"ceo\":\"Satya Nadella\",\"marketStatus\":\"CLOSED\",\"revenue\":\"$ 245.0 Billion\",\"netProfit\":\"$ 88.0 Billion\",\"roe\":\"38.5%\",\"debtToEquity\":\"0.28\",\"growthScore\":9,\"radarData\":[{\"subject\":\"Growth\",\"value\":85},{\"subject\":\"Moat\",\"value\":95},{\"subject\":\"Value\",\"value\":55},{\"subject\":\"Risk\",\"value\":20},{\"subject\":\"Innovation\",\"value\":92},{\"subject\":\"Financial Strength\",\"value\":95}],\"logs\":[\"SEC disclosures and MSFT financials loaded.\",\"Azure growth metrics validated.\"],\"liveFin\":{\"currentPrice\":388.84,\"priceChangePercent\":-21.88,\"marketCap\":\"$15.0 Billion\",\"currency\":\"USD\",\"exchange\":\"NasdaqGS\",\"open\":388.22,\"previousClose\":497.72,\"high\":395.57,\"low\":388.22,\"fiftyTwoWeekHigh\":555.45,\"fiftyTwoWeekLow\":349.2,\"volume\":29039552,\"averageVolume\":29039552,\"peRatio\":33.4,\"eps\":11.6,\"dividendYield\":0.7,\"sharesOutstanding\":7430000000,\"sector\":\"Technology\",\"industry\":\"Software & Services\",\"ceo\":\"Satya Nadella\",\"country\":\"United States\",\"marketStatus\":\"CLOSED\",\"lastUpdatedTime\":\"8/7/2026, 4:38:15 pm\",\"chartsData\":{\"Quarterly\":[{\"name\":\"15 Jun 26\",\"value\":379.4},{\"name\":\"22 Jun 26\",\"value\":372.97},{\"name\":\"29 Jun 26\",\"value\":390.49},{\"name\":\"06 Jul 26\",\"value\":388.84},{\"name\":\"08 Jul 26\",\"value\":388.84}],\"Annual\":[{\"name\":\"27 Apr 26\",\"value\":414.44},{\"name\":\"04 May 26\",\"value\":415.12},{\"name\":\"11 May 26\",\"value\":421.92},{\"name\":\"18 May 26\",\"value\":418.57},{\"name\":\"25 May 26\",\"value\":450.24},{\"name\":\"01 Jun 26\",\"value\":416.67},{\"name\":\"08 Jun 26\",\"value\":390.74},{\"name\":\"15 Jun 26\",\"value\":379.4},{\"name\":\"22 Jun 26\",\"value\":372.97},{\"name\":\"29 Jun 26\",\"value\":390.49},{\"name\":\"06 Jul 26\",\"value\":388.84},{\"name\":\"08 Jul 26\",\"value\":388.84}],\"5 Years\":[{\"name\":\"07 Jul 25\",\"value\":503.32},{\"name\":\"14 Jul 25\",\"value\":510.05},{\"name\":\"21 Jul 25\",\"value\":513.71},{\"name\":\"28 Jul 25\",\"value\":524.11},{\"name\":\"04 Aug 25\",\"value\":522.04},{\"name\":\"11 Aug 25\",\"value\":520.17},{\"name\":\"18 Aug 25\",\"value\":507.23},{\"name\":\"25 Aug 25\",\"value\":506.69},{\"name\":\"01 Sept 25\",\"value\":495},{\"name\":\"08 Sept 25\",\"value\":509.9},{\"name\":\"15 Sept 25\",\"value\":517.93},{\"name\":\"22 Sept 25\",\"value\":511.46},{\"name\":\"29 Sept 25\",\"value\":517.35},{\"name\":\"06 Oct 25\",\"value\":510.96},{\"name\":\"13 Oct 25\",\"value\":513.58},{\"name\":\"20 Oct 25\",\"value\":523.61},{\"name\":\"27 Oct 25\",\"value\":517.81},{\"name\":\"03 Nov 25\",\"value\":496.82},{\"name\":\"10 Nov 25\",\"value\":510.18},{\"name\":\"17 Nov 25\",\"value\":472.12},{\"name\":\"24 Nov 25\",\"value\":492.01},{\"name\":\"01 Dec 25\",\"value\":483.16},{\"name\":\"08 Dec 25\",\"value\":478.53},{\"name\":\"15 Dec 25\",\"value\":485.92},{\"name\":\"22 Dec 25\",\"value\":487.71},{\"name\":\"29 Dec 25\",\"value\":472.94},{\"name\":\"05 Jan 26\",\"value\":479.28},{\"name\":\"12 Jan 26\",\"value\":459.86},{\"name\":\"19 Jan 26\",\"value\":465.95},{\"name\":\"26 Jan 26\",\"value\":430.29},{\"name\":\"02 Feb 26\",\"value\":401.14},{\"name\":\"09 Feb 26\",\"value\":401.32},{\"name\":\"16 Feb 26\",\"value\":397.23},{\"name\":\"23 Feb 26\",\"value\":392.74},{\"name\":\"02 Mar 26\",\"value\":408.96},{\"name\":\"09 Mar 26\",\"value\":395.55},{\"name\":\"16 Mar 26\",\"value\":381.87},{\"name\":\"23 Mar 26\",\"value\":356.77},{\"name\":\"30 Mar 26\",\"value\":373.46},{\"name\":\"06 Apr 26\",\"value\":370.87},{\"name\":\"13 Apr 26\",\"value\":422.79},{\"name\":\"20 Apr 26\",\"value\":424.62},{\"name\":\"27 Apr 26\",\"value\":414.44},{\"name\":\"04 May 26\",\"value\":415.12},{\"name\":\"11 May 26\",\"value\":421.92},{\"name\":\"18 May 26\",\"value\":418.57},{\"name\":\"25 May 26\",\"value\":450.24},{\"name\":\"01 Jun 26\",\"value\":416.67},{\"name\":\"08 Jun 26\",\"value\":390.74},{\"name\":\"15 Jun 26\",\"value\":379.4},{\"name\":\"22 Jun 26\",\"value\":372.97},{\"name\":\"29 Jun 26\",\"value\":390.49},{\"name\":\"06 Jul 26\",\"value\":388.84},{\"name\":\"08 Jul 26\",\"value\":388.84}],\"10 Years\":[{\"name\":\"07 Jul 25\",\"value\":503.32},{\"name\":\"14 Jul 25\",\"value\":510.05},{\"name\":\"21 Jul 25\",\"value\":513.71},{\"name\":\"28 Jul 25\",\"value\":524.11},{\"name\":\"04 Aug 25\",\"value\":522.04},{\"name\":\"11 Aug 25\",\"value\":520.17},{\"name\":\"18 Aug 25\",\"value\":507.23},{\"name\":\"25 Aug 25\",\"value\":506.69},{\"name\":\"01 Sept 25\",\"value\":495},{\"name\":\"08 Sept 25\",\"value\":509.9},{\"name\":\"15 Sept 25\",\"value\":517.93},{\"name\":\"22 Sept 25\",\"value\":511.46},{\"name\":\"29 Sept 25\",\"value\":517.35},{\"name\":\"06 Oct 25\",\"value\":510.96},{\"name\":\"13 Oct 25\",\"value\":513.58},{\"name\":\"20 Oct 25\",\"value\":523.61},{\"name\":\"27 Oct 25\",\"value\":517.81},{\"name\":\"03 Nov 25\",\"value\":496.82},{\"name\":\"10 Nov 25\",\"value\":510.18},{\"name\":\"17 Nov 25\",\"value\":472.12},{\"name\":\"24 Nov 25\",\"value\":492.01},{\"name\":\"01 Dec 25\",\"value\":483.16},{\"name\":\"08 Dec 25\",\"value\":478.53},{\"name\":\"15 Dec 25\",\"value\":485.92},{\"name\":\"22 Dec 25\",\"value\":487.71},{\"name\":\"29 Dec 25\",\"value\":472.94},{\"name\":\"05 Jan 26\",\"value\":479.28},{\"name\":\"12 Jan 26\",\"value\":459.86},{\"name\":\"19 Jan 26\",\"value\":465.95},{\"name\":\"26 Jan 26\",\"value\":430.29},{\"name\":\"02 Feb 26\",\"value\":401.14},{\"name\":\"09 Feb 26\",\"value\":401.32},{\"name\":\"16 Feb 26\",\"value\":397.23},{\"name\":\"23 Feb 26\",\"value\":392.74},{\"name\":\"02 Mar 26\",\"value\":408.96},{\"name\":\"09 Mar 26\",\"value\":395.55},{\"name\":\"16 Mar 26\",\"value\":381.87},{\"name\":\"23 Mar 26\",\"value\":356.77},{\"name\":\"30 Mar 26\",\"value\":373.46},{\"name\":\"06 Apr 26\",\"value\":370.87},{\"name\":\"13 Apr 26\",\"value\":422.79},{\"name\":\"20 Apr 26\",\"value\":424.62},{\"name\":\"27 Apr 26\",\"value\":414.44},{\"name\":\"04 May 26\",\"value\":415.12},{\"name\":\"11 May 26\",\"value\":421.92},{\"name\":\"18 May 26\",\"value\":418.57},{\"name\":\"25 May 26\",\"value\":450.24},{\"name\":\"01 Jun 26\",\"value\":416.67},{\"name\":\"08 Jun 26\",\"value\":390.74},{\"name\":\"15 Jun 26\",\"value\":379.4},{\"name\":\"22 Jun 26\",\"value\":372.97},{\"name\":\"29 Jun 26\",\"value\":390.49},{\"name\":\"06 Jul 26\",\"value\":388.84},{\"name\":\"08 Jul 26\",\"value\":388.84}]}},\"charts\":{\"Quarterly\":[{\"name\":\"15 Jun 26\",\"value\":379.4},{\"name\":\"22 Jun 26\",\"value\":372.97},{\"name\":\"29 Jun 26\",\"value\":390.49},{\"name\":\"06 Jul 26\",\"value\":388.84},{\"name\":\"08 Jul 26\",\"value\":388.84}],\"Annual\":[{\"name\":\"27 Apr 26\",\"value\":414.44},{\"name\":\"04 May 26\",\"value\":415.12},{\"name\":\"11 May 26\",\"value\":421.92},{\"name\":\"18 May 26\",\"value\":418.57},{\"name\":\"25 May 26\",\"value\":450.24},{\"name\":\"01 Jun 26\",\"value\":416.67},{\"name\":\"08 Jun 26\",\"value\":390.74},{\"name\":\"15 Jun 26\",\"value\":379.4},{\"name\":\"22 Jun 26\",\"value\":372.97},{\"name\":\"29 Jun 26\",\"value\":390.49},{\"name\":\"06 Jul 26\",\"value\":388.84},{\"name\":\"08 Jul 26\",\"value\":388.84}],\"5 Years\":[{\"name\":\"07 Jul 25\",\"value\":503.32},{\"name\":\"14 Jul 25\",\"value\":510.05},{\"name\":\"21 Jul 25\",\"value\":513.71},{\"name\":\"28 Jul 25\",\"value\":524.11},{\"name\":\"04 Aug 25\",\"value\":522.04},{\"name\":\"11 Aug 25\",\"value\":520.17},{\"name\":\"18 Aug 25\",\"value\":507.23},{\"name\":\"25 Aug 25\",\"value\":506.69},{\"name\":\"01 Sept 25\",\"value\":495},{\"name\":\"08 Sept 25\",\"value\":509.9},{\"name\":\"15 Sept 25\",\"value\":517.93},{\"name\":\"22 Sept 25\",\"value\":511.46},{\"name\":\"29 Sept 25\",\"value\":517.35},{\"name\":\"06 Oct 25\",\"value\":510.96},{\"name\":\"13 Oct 25\",\"value\":513.58},{\"name\":\"20 Oct 25\",\"value\":523.61},{\"name\":\"27 Oct 25\",\"value\":517.81},{\"name\":\"03 Nov 25\",\"value\":496.82},{\"name\":\"10 Nov 25\",\"value\":510.18},{\"name\":\"17 Nov 25\",\"value\":472.12},{\"name\":\"24 Nov 25\",\"value\":492.01},{\"name\":\"01 Dec 25\",\"value\":483.16},{\"name\":\"08 Dec 25\",\"value\":478.53},{\"name\":\"15 Dec 25\",\"value\":485.92},{\"name\":\"22 Dec 25\",\"value\":487.71},{\"name\":\"29 Dec 25\",\"value\":472.94},{\"name\":\"05 Jan 26\",\"value\":479.28},{\"name\":\"12 Jan 26\",\"value\":459.86},{\"name\":\"19 Jan 26\",\"value\":465.95},{\"name\":\"26 Jan 26\",\"value\":430.29},{\"name\":\"02 Feb 26\",\"value\":401.14},{\"name\":\"09 Feb 26\",\"value\":401.32},{\"name\":\"16 Feb 26\",\"value\":397.23},{\"name\":\"23 Feb 26\",\"value\":392.74},{\"name\":\"02 Mar 26\",\"value\":408.96},{\"name\":\"09 Mar 26\",\"value\":395.55},{\"name\":\"16 Mar 26\",\"value\":381.87},{\"name\":\"23 Mar 26\",\"value\":356.77},{\"name\":\"30 Mar 26\",\"value\":373.46},{\"name\":\"06 Apr 26\",\"value\":370.87},{\"name\":\"13 Apr 26\",\"value\":422.79},{\"name\":\"20 Apr 26\",\"value\":424.62},{\"name\":\"27 Apr 26\",\"value\":414.44},{\"name\":\"04 May 26\",\"value\":415.12},{\"name\":\"11 May 26\",\"value\":421.92},{\"name\":\"18 May 26\",\"value\":418.57},{\"name\":\"25 May 26\",\"value\":450.24},{\"name\":\"01 Jun 26\",\"value\":416.67},{\"name\":\"08 Jun 26\",\"value\":390.74},{\"name\":\"15 Jun 26\",\"value\":379.4},{\"name\":\"22 Jun 26\",\"value\":372.97},{\"name\":\"29 Jun 26\",\"value\":390.49},{\"name\":\"06 Jul 26\",\"value\":388.84},{\"name\":\"08 Jul 26\",\"value\":388.84}],\"10 Years\":[{\"name\":\"07 Jul 25\",\"value\":503.32},{\"name\":\"14 Jul 25\",\"value\":510.05},{\"name\":\"21 Jul 25\",\"value\":513.71},{\"name\":\"28 Jul 25\",\"value\":524.11},{\"name\":\"04 Aug 25\",\"value\":522.04},{\"name\":\"11 Aug 25\",\"value\":520.17},{\"name\":\"18 Aug 25\",\"value\":507.23},{\"name\":\"25 Aug 25\",\"value\":506.69},{\"name\":\"01 Sept 25\",\"value\":495},{\"name\":\"08 Sept 25\",\"value\":509.9},{\"name\":\"15 Sept 25\",\"value\":517.93},{\"name\":\"22 Sept 25\",\"value\":511.46},{\"name\":\"29 Sept 25\",\"value\":517.35},{\"name\":\"06 Oct 25\",\"value\":510.96},{\"name\":\"13 Oct 25\",\"value\":513.58},{\"name\":\"20 Oct 25\",\"value\":523.61},{\"name\":\"27 Oct 25\",\"value\":517.81},{\"name\":\"03 Nov 25\",\"value\":496.82},{\"name\":\"10 Nov 25\",\"value\":510.18},{\"name\":\"17 Nov 25\",\"value\":472.12},{\"name\":\"24 Nov 25\",\"value\":492.01},{\"name\":\"01 Dec 25\",\"value\":483.16},{\"name\":\"08 Dec 25\",\"value\":478.53},{\"name\":\"15 Dec 25\",\"value\":485.92},{\"name\":\"22 Dec 25\",\"value\":487.71},{\"name\":\"29 Dec 25\",\"value\":472.94},{\"name\":\"05 Jan 26\",\"value\":479.28},{\"name\":\"12 Jan 26\",\"value\":459.86},{\"name\":\"19 Jan 26\",\"value\":465.95},{\"name\":\"26 Jan 26\",\"value\":430.29},{\"name\":\"02 Feb 26\",\"value\":401.14},{\"name\":\"09 Feb 26\",\"value\":401.32},{\"name\":\"16 Feb 26\",\"value\":397.23},{\"name\":\"23 Feb 26\",\"value\":392.74},{\"name\":\"02 Mar 26\",\"value\":408.96},{\"name\":\"09 Mar 26\",\"value\":395.55},{\"name\":\"16 Mar 26\",\"value\":381.87},{\"name\":\"23 Mar 26\",\"value\":356.77},{\"name\":\"30 Mar 26\",\"value\":373.46},{\"name\":\"06 Apr 26\",\"value\":370.87},{\"name\":\"13 Apr 26\",\"value\":422.79},{\"name\":\"20 Apr 26\",\"value\":424.62},{\"name\":\"27 Apr 26\",\"value\":414.44},{\"name\":\"04 May 26\",\"value\":415.12},{\"name\":\"11 May 26\",\"value\":421.92},{\"name\":\"18 May 26\",\"value\":418.57},{\"name\":\"25 May 26\",\"value\":450.24},{\"name\":\"01 Jun 26\",\"value\":416.67},{\"name\":\"08 Jun 26\",\"value\":390.74},{\"name\":\"15 Jun 26\",\"value\":379.4},{\"name\":\"22 Jun 26\",\"value\":372.97},{\"name\":\"29 Jun 26\",\"value\":390.49},{\"name\":\"06 Jul 26\",\"value\":388.84},{\"name\":\"08 Jul 26\",\"value\":388.84}]}},\"news\":[{\"headline\":\"Microsoft Corp. Secures Large Digital Infrastructure Deal\",\"summary\":\"Microsoft Corp. announced a major multi-year digital transformation and cloud operations agreement with a global enterprise.\",\"sentiment\":\"POSITIVE\",\"publishedAt\":\"1h ago\",\"source\":\"Reuters\",\"url\":\"#\"},{\"headline\":\"Analysts Maintain Positive Outlook on Microsoft Corp.\",\"summary\":\"Market analysts highlight strong contract pipelines and solid execution capabilities for Microsoft Corp..\",\"sentiment\":\"POSITIVE\",\"publishedAt\":\"4h ago\",\"source\":\"Bloomberg\",\"url\":\"#\"}],\"competitor\":{\"competitors\":[{\"name\":\"Apple Inc.\",\"ticker\":\"AAPL\",\"revenue\":\"$385B\",\"marketCap\":\"$3.28T\",\"peRatio\":\"31.2\",\"growth\":\"+15% YoY\",\"risk\":\"Low\",\"aiRecommendation\":\"Buy\"},{\"name\":\"Alphabet Inc.\",\"ticker\":\"GOOGL\",\"revenue\":\"$305B\",\"marketCap\":\"$2.1T\",\"peRatio\":\"24.5\",\"growth\":\"+12% YoY\",\"risk\":\"Low\",\"aiRecommendation\":\"Buy\"},{\"name\":\"Amazon.com Inc.\",\"ticker\":\"AMZN\",\"revenue\":\"$570B\",\"marketCap\":\"$1.9T\",\"peRatio\":\"42.1\",\"growth\":\"+18% YoY\",\"risk\":\"Medium\",\"aiRecommendation\":\"Buy\"}],\"summary\":\"Microsoft maintains strong competitive positioning in enterprise software and cloud infrastructure.\",\"logs\":[\"Found key software & cloud peers.\",\"Benchmarked Azure vs AWS vs GCP.\"]},\"technical\":{\"rsi\":\"58 (Neutral/Bullish)\",\"macd\":\"Bullish (Azure growth correlation)\",\"sma20\":\"Above SMA20 (Bullish)\",\"sma50\":\"Above SMA50 (Bullish)\",\"sma200\":\"Above SMA200 (Long-term Bullish)\",\"supportLevel\":\"$430\",\"resistanceLevel\":\"$455\",\"trend\":\"Bullish\",\"logs\":[\"Parsed MSFT charts.\",\"Support at $430 holds firm.\"]},\"risk\":{\"financialRisk\":20,\"businessRisk\":30,\"marketRisk\":35,\"competitiveRisk\":25,\"executionRisk\":25,\"complianceScore\":\"95%\",\"geopoliticalRisk\":\"Low\",\"regulatoryRisk\":\"Medium\",\"logs\":[\"Risk matrices computed.\",\"Compliance checklist for Microsoft Corp. passed.\"]},\"critic\":{\"feedback\":\"Re-verify customer spending metrics for Microsoft Corp..\",\"score\":\"97.2%\"},\"outputJson\":{\"company\":\"Microsoft Corp.\",\"ticker\":\"MSFT\",\"sector\":\"Technology\",\"industry\":\"Software & Services\",\"recommendation\":\"Buy\",\"investmentScore\":78,\"confidence\":80,\"timeHorizon\":\"Long\",\"riskLevel\":\"High\",\"currentPrice\":388.84,\"marketCap\":\"$15.0 Billion\",\"financialHealth\":{\"peRatio\":\"25x\",\"eps\":\"$ 15.55\",\"roe\":\"27%\",\"debtToEquity\":\"0.74\"},\"bullCase\":[\"Strong business momentum with expanding market share in Technology.\",\"High return on equity of 27% coupled with healthy cash conversion rates.\"],\"bearCase\":[\"Potential headwind from global macroeconomic contraction affecting client budgets.\",\"Competitive pricing pressures in Software & Services capping gross margins.\"],\"riskAnalysis\":{\"financialRisk\":34,\"businessRisk\":58,\"marketRisk\":32,\"competitiveRisk\":56,\"executionRisk\":30},\"latestNews\":[\"Microsoft Corp. Secures Large Digital Infrastructure Deal\",\"Analysts Maintain Positive Outlook on Microsoft Corp.\"],\"judgeVerdict\":\"Microsoft Corp. represents a compelling investment opportunity. The company exhibits robust profitability, a clean capital structure (Debt/Equity: 0.74), and a leading position in Technology. Despite sector headwinds, strong competitive advantages justify a buy rating.\",\"summary\":\"Growth compounder with high capital efficiency.\",\"logs\":[\"Consensus signed.\",\"Chief Justice verdict registered.\"]}}",
+      "created_at": "2026-07-08T11:08:22.451Z"
     }
   ],
   "news_cache": [
@@ -2113,342 +2141,6 @@
       "log_level": "INFO",
       "message": "Chief Justice verdict registered.",
       "created_at": "2026-07-06T11:22:52.880Z"
-    },
-    {
-      "id": 526,
-      "company_id": 6,
-      "agent_name": "Research Planner",
-      "log_level": "INFO",
-      "message": "Research Planner Agent formulated global strategy.",
-      "created_at": "2026-07-06T12:50:44.530Z"
-    },
-    {
-      "id": 527,
-      "company_id": 6,
-      "agent_name": "Research Planner",
-      "log_level": "INFO",
-      "message": "Ingestion metrics defined: Global corporate filings.",
-      "created_at": "2026-07-06T12:50:44.541Z"
-    },
-    {
-      "id": 528,
-      "company_id": 6,
-      "agent_name": "Research Agent",
-      "log_level": "INFO",
-      "message": "Research Agent compiled Reliance Industries profile.",
-      "created_at": "2026-07-06T12:50:45.199Z"
-    },
-    {
-      "id": 529,
-      "company_id": 6,
-      "agent_name": "Research Agent",
-      "log_level": "INFO",
-      "message": "CEO Mukesh Ambani verified.",
-      "created_at": "2026-07-06T12:50:45.208Z"
-    },
-    {
-      "id": 530,
-      "company_id": 6,
-      "agent_name": "Financial Analyst",
-      "log_level": "INFO",
-      "message": "Balance sheets and corporate reports ingested.",
-      "created_at": "2026-07-06T12:50:45.308Z"
-    },
-    {
-      "id": 531,
-      "company_id": 6,
-      "agent_name": "Financial Analyst",
-      "log_level": "INFO",
-      "message": "Retail and digital services margin acceleration verified.",
-      "created_at": "2026-07-06T12:50:45.316Z"
-    },
-    {
-      "id": 532,
-      "company_id": 6,
-      "agent_name": "News Analyst",
-      "log_level": "INFO",
-      "message": "Processed 420 Indian financial news articles.",
-      "created_at": "2026-07-06T12:50:45.376Z"
-    },
-    {
-      "id": 533,
-      "company_id": 6,
-      "agent_name": "News Analyst",
-      "log_level": "INFO",
-      "message": "Retail growth catalyst verified.",
-      "created_at": "2026-07-06T12:50:45.386Z"
-    },
-    {
-      "id": 534,
-      "company_id": 6,
-      "agent_name": "Competitor Analyst",
-      "log_level": "INFO",
-      "message": "Found key competitors in oil refining & energy.",
-      "created_at": "2026-07-06T12:50:45.420Z"
-    },
-    {
-      "id": 535,
-      "company_id": 6,
-      "agent_name": "Competitor Analyst",
-      "log_level": "INFO",
-      "message": "Calculated sector PE premiums.",
-      "created_at": "2026-07-06T12:50:45.442Z"
-    },
-    {
-      "id": 536,
-      "company_id": 6,
-      "agent_name": "Technical Analyst",
-      "log_level": "INFO",
-      "message": "Parsed daily Reliance charts.",
-      "created_at": "2026-07-06T12:50:45.469Z"
-    },
-    {
-      "id": 537,
-      "company_id": 6,
-      "agent_name": "Technical Analyst",
-      "log_level": "INFO",
-      "message": "Identified support band at ₹2,380.",
-      "created_at": "2026-07-06T12:50:45.487Z"
-    },
-    {
-      "id": 538,
-      "company_id": 6,
-      "agent_name": "Risk Auditor",
-      "log_level": "INFO",
-      "message": "Risk matrices computed.",
-      "created_at": "2026-07-06T12:50:45.511Z"
-    },
-    {
-      "id": 539,
-      "company_id": 6,
-      "agent_name": "Risk Auditor",
-      "log_level": "INFO",
-      "message": "SEBI/SEC compliance checklists passed.",
-      "created_at": "2026-07-06T12:50:45.528Z"
-    },
-    {
-      "id": 540,
-      "company_id": 6,
-      "agent_name": "Bull Analyst",
-      "log_level": "INFO",
-      "message": "Preparing long arguments...",
-      "created_at": "2026-07-06T12:50:45.557Z"
-    },
-    {
-      "id": 541,
-      "company_id": 6,
-      "agent_name": "Bull Analyst",
-      "log_level": "INFO",
-      "message": "Consumer margins growth checked.",
-      "created_at": "2026-07-06T12:50:45.575Z"
-    },
-    {
-      "id": 542,
-      "company_id": 6,
-      "agent_name": "Bear Analyst",
-      "log_level": "INFO",
-      "message": "Auditing downside risks...",
-      "created_at": "2026-07-06T12:50:45.602Z"
-    },
-    {
-      "id": 543,
-      "company_id": 6,
-      "agent_name": "Bear Analyst",
-      "log_level": "INFO",
-      "message": "GRM and leverage ratios analyzed.",
-      "created_at": "2026-07-06T12:50:45.621Z"
-    },
-    {
-      "id": 544,
-      "company_id": 6,
-      "agent_name": "Self Critic",
-      "log_level": "INFO",
-      "message": "Critic node rebalanced consensus.",
-      "created_at": "2026-07-06T12:50:45.648Z"
-    },
-    {
-      "id": 545,
-      "company_id": 6,
-      "agent_name": "Self Critic",
-      "log_level": "INFO",
-      "message": "Objectivity score signed.",
-      "created_at": "2026-07-06T12:50:45.664Z"
-    },
-    {
-      "id": 546,
-      "company_id": 6,
-      "agent_name": "Chief Justice",
-      "log_level": "INFO",
-      "message": "Consensus signed.",
-      "created_at": "2026-07-06T12:50:45.691Z"
-    },
-    {
-      "id": 547,
-      "company_id": 6,
-      "agent_name": "Chief Justice",
-      "log_level": "INFO",
-      "message": "Chief Justice verdict registered.",
-      "created_at": "2026-07-06T12:50:45.710Z"
-    },
-    {
-      "id": 548,
-      "company_id": 6,
-      "agent_name": "Research Agent",
-      "log_level": "INFO",
-      "message": "Research Agent compiled Reliance Industries profile.",
-      "created_at": "2026-07-06T12:50:45.793Z"
-    },
-    {
-      "id": 549,
-      "company_id": 6,
-      "agent_name": "Research Agent",
-      "log_level": "INFO",
-      "message": "CEO Mukesh Ambani verified.",
-      "created_at": "2026-07-06T12:50:45.809Z"
-    },
-    {
-      "id": 550,
-      "company_id": 6,
-      "agent_name": "Financial Analyst",
-      "log_level": "INFO",
-      "message": "Balance sheets and corporate reports ingested.",
-      "created_at": "2026-07-06T12:50:45.860Z"
-    },
-    {
-      "id": 551,
-      "company_id": 6,
-      "agent_name": "Financial Analyst",
-      "log_level": "INFO",
-      "message": "Retail and digital services margin acceleration verified.",
-      "created_at": "2026-07-06T12:50:45.878Z"
-    },
-    {
-      "id": 552,
-      "company_id": 6,
-      "agent_name": "News Analyst",
-      "log_level": "INFO",
-      "message": "Processed 420 Indian financial news articles.",
-      "created_at": "2026-07-06T12:50:45.984Z"
-    },
-    {
-      "id": 553,
-      "company_id": 6,
-      "agent_name": "News Analyst",
-      "log_level": "INFO",
-      "message": "Retail growth catalyst verified.",
-      "created_at": "2026-07-06T12:50:46.002Z"
-    },
-    {
-      "id": 554,
-      "company_id": 6,
-      "agent_name": "Competitor Analyst",
-      "log_level": "INFO",
-      "message": "Found key competitors in oil refining & energy.",
-      "created_at": "2026-07-06T12:50:46.043Z"
-    },
-    {
-      "id": 555,
-      "company_id": 6,
-      "agent_name": "Competitor Analyst",
-      "log_level": "INFO",
-      "message": "Calculated sector PE premiums.",
-      "created_at": "2026-07-06T12:50:46.062Z"
-    },
-    {
-      "id": 556,
-      "company_id": 6,
-      "agent_name": "Technical Analyst",
-      "log_level": "INFO",
-      "message": "Parsed daily Reliance charts.",
-      "created_at": "2026-07-06T12:50:46.089Z"
-    },
-    {
-      "id": 557,
-      "company_id": 6,
-      "agent_name": "Technical Analyst",
-      "log_level": "INFO",
-      "message": "Identified support band at ₹2,380.",
-      "created_at": "2026-07-06T12:50:46.105Z"
-    },
-    {
-      "id": 558,
-      "company_id": 6,
-      "agent_name": "Risk Auditor",
-      "log_level": "INFO",
-      "message": "Risk matrices computed.",
-      "created_at": "2026-07-06T12:50:46.134Z"
-    },
-    {
-      "id": 559,
-      "company_id": 6,
-      "agent_name": "Risk Auditor",
-      "log_level": "INFO",
-      "message": "SEBI/SEC compliance checklists passed.",
-      "created_at": "2026-07-06T12:50:46.150Z"
-    },
-    {
-      "id": 560,
-      "company_id": 6,
-      "agent_name": "Bull Analyst",
-      "log_level": "INFO",
-      "message": "Preparing long arguments...",
-      "created_at": "2026-07-06T12:50:46.182Z"
-    },
-    {
-      "id": 561,
-      "company_id": 6,
-      "agent_name": "Bull Analyst",
-      "log_level": "INFO",
-      "message": "Consumer margins growth checked.",
-      "created_at": "2026-07-06T12:50:46.202Z"
-    },
-    {
-      "id": 562,
-      "company_id": 6,
-      "agent_name": "Bear Analyst",
-      "log_level": "INFO",
-      "message": "Auditing downside risks...",
-      "created_at": "2026-07-06T12:50:46.239Z"
-    },
-    {
-      "id": 563,
-      "company_id": 6,
-      "agent_name": "Bear Analyst",
-      "log_level": "INFO",
-      "message": "GRM and leverage ratios analyzed.",
-      "created_at": "2026-07-06T12:50:46.258Z"
-    },
-    {
-      "id": 564,
-      "company_id": 6,
-      "agent_name": "Self Critic",
-      "log_level": "INFO",
-      "message": "Critic node rebalanced consensus.",
-      "created_at": "2026-07-06T12:50:46.287Z"
-    },
-    {
-      "id": 565,
-      "company_id": 6,
-      "agent_name": "Self Critic",
-      "log_level": "INFO",
-      "message": "Objectivity score signed.",
-      "created_at": "2026-07-06T12:50:46.305Z"
-    },
-    {
-      "id": 566,
-      "company_id": 6,
-      "agent_name": "Chief Justice",
-      "log_level": "INFO",
-      "message": "Consensus signed.",
-      "created_at": "2026-07-06T12:50:46.335Z"
-    },
-    {
-      "id": 567,
-      "company_id": 6,
-      "agent_name": "Chief Justice",
-      "log_level": "INFO",
-      "message": "Chief Justice verdict registered.",
-      "created_at": "2026-07-06T12:50:46.351Z"
     },
     {
       "id": 568,
@@ -4313,6 +4005,214 @@
       "log_level": "INFO",
       "message": "Chief Justice verdict registered.",
       "created_at": "2026-07-07T10:04:31.755Z"
+    },
+    {
+      "id": 801,
+      "company_id": 6,
+      "agent_name": "Research Planner",
+      "log_level": "INFO",
+      "message": "Research Planner Agent formulated global strategy for Microsoft Corp..",
+      "created_at": "2026-07-08T11:08:13.433Z"
+    },
+    {
+      "id": 802,
+      "company_id": 6,
+      "agent_name": "Research Planner",
+      "log_level": "INFO",
+      "message": "Ingestion metrics defined: Global corporate filings.",
+      "created_at": "2026-07-08T11:08:13.554Z"
+    },
+    {
+      "id": 803,
+      "company_id": 6,
+      "agent_name": "Research Planner",
+      "log_level": "INFO",
+      "message": "Research Planner Agent formulated global strategy for Microsoft Corp..",
+      "created_at": "2026-07-08T11:08:13.935Z"
+    },
+    {
+      "id": 804,
+      "company_id": 6,
+      "agent_name": "Research Planner",
+      "log_level": "INFO",
+      "message": "Ingestion metrics defined: Global corporate filings.",
+      "created_at": "2026-07-08T11:08:14.089Z"
+    },
+    {
+      "id": 805,
+      "company_id": 6,
+      "agent_name": "Research Agent",
+      "log_level": "INFO",
+      "message": "Research Agent compiled Microsoft profile.",
+      "created_at": "2026-07-08T11:08:14.685Z"
+    },
+    {
+      "id": 806,
+      "company_id": 6,
+      "agent_name": "Research Agent",
+      "log_level": "INFO",
+      "message": "CEO Satya Nadella verified.",
+      "created_at": "2026-07-08T11:08:14.791Z"
+    },
+    {
+      "id": 807,
+      "company_id": 6,
+      "agent_name": "Financial Analyst",
+      "log_level": "INFO",
+      "message": "SEC disclosures and MSFT financials loaded.",
+      "created_at": "2026-07-08T11:08:15.931Z"
+    },
+    {
+      "id": 808,
+      "company_id": 6,
+      "agent_name": "Financial Analyst",
+      "log_level": "INFO",
+      "message": "Azure growth metrics validated.",
+      "created_at": "2026-07-08T11:08:16.077Z"
+    },
+    {
+      "id": 809,
+      "company_id": 6,
+      "agent_name": "News Analyst",
+      "log_level": "INFO",
+      "message": "Processed news articles for Microsoft Corp..",
+      "created_at": "2026-07-08T11:08:18.281Z"
+    },
+    {
+      "id": 810,
+      "company_id": 6,
+      "agent_name": "News Analyst",
+      "log_level": "INFO",
+      "message": "Sentiment classification complete.",
+      "created_at": "2026-07-08T11:08:18.353Z"
+    },
+    {
+      "id": 811,
+      "company_id": 6,
+      "agent_name": "Competitor Analyst",
+      "log_level": "INFO",
+      "message": "Found key software & cloud peers.",
+      "created_at": "2026-07-08T11:08:18.939Z"
+    },
+    {
+      "id": 812,
+      "company_id": 6,
+      "agent_name": "Competitor Analyst",
+      "log_level": "INFO",
+      "message": "Benchmarked Azure vs AWS vs GCP.",
+      "created_at": "2026-07-08T11:08:19.010Z"
+    },
+    {
+      "id": 813,
+      "company_id": 6,
+      "agent_name": "Competitor Analyst",
+      "log_level": "INFO",
+      "message": "Found key software & cloud peers.",
+      "created_at": "2026-07-08T11:08:19.245Z"
+    },
+    {
+      "id": 814,
+      "company_id": 6,
+      "agent_name": "Competitor Analyst",
+      "log_level": "INFO",
+      "message": "Benchmarked Azure vs AWS vs GCP.",
+      "created_at": "2026-07-08T11:08:19.314Z"
+    },
+    {
+      "id": 815,
+      "company_id": 6,
+      "agent_name": "Risk Auditor",
+      "log_level": "INFO",
+      "message": "Risk matrices computed.",
+      "created_at": "2026-07-08T11:08:19.874Z"
+    },
+    {
+      "id": 816,
+      "company_id": 6,
+      "agent_name": "Risk Auditor",
+      "log_level": "INFO",
+      "message": "Compliance checklist for Microsoft Corp. passed.",
+      "created_at": "2026-07-08T11:08:20.020Z"
+    },
+    {
+      "id": 817,
+      "company_id": 6,
+      "agent_name": "Risk Auditor",
+      "log_level": "INFO",
+      "message": "Risk matrices computed.",
+      "created_at": "2026-07-08T11:08:20.340Z"
+    },
+    {
+      "id": 818,
+      "company_id": 6,
+      "agent_name": "Risk Auditor",
+      "log_level": "INFO",
+      "message": "Compliance checklist for Microsoft Corp. passed.",
+      "created_at": "2026-07-08T11:08:20.432Z"
+    },
+    {
+      "id": 819,
+      "company_id": 6,
+      "agent_name": "Bull Analyst",
+      "log_level": "INFO",
+      "message": "Preparing long arguments...",
+      "created_at": "2026-07-08T11:08:20.950Z"
+    },
+    {
+      "id": 820,
+      "company_id": 6,
+      "agent_name": "Bull Analyst",
+      "log_level": "INFO",
+      "message": "Upside thesis locked for Microsoft Corp..",
+      "created_at": "2026-07-08T11:08:21.055Z"
+    },
+    {
+      "id": 821,
+      "company_id": 6,
+      "agent_name": "Bear Analyst",
+      "log_level": "INFO",
+      "message": "Auditing downside risks...",
+      "created_at": "2026-07-08T11:08:21.458Z"
+    },
+    {
+      "id": 822,
+      "company_id": 6,
+      "agent_name": "Bear Analyst",
+      "log_level": "INFO",
+      "message": "Risk factors registered for Microsoft Corp..",
+      "created_at": "2026-07-08T11:08:21.541Z"
+    },
+    {
+      "id": 823,
+      "company_id": 6,
+      "agent_name": "Chief Justice",
+      "log_level": "INFO",
+      "message": "Consensus signed.",
+      "created_at": "2026-07-08T11:08:21.892Z"
+    },
+    {
+      "id": 824,
+      "company_id": 6,
+      "agent_name": "Chief Justice",
+      "log_level": "INFO",
+      "message": "Chief Justice verdict registered.",
+      "created_at": "2026-07-08T11:08:21.976Z"
+    },
+    {
+      "id": 825,
+      "company_id": 6,
+      "agent_name": "Chief Justice",
+      "log_level": "INFO",
+      "message": "Consensus signed.",
+      "created_at": "2026-07-08T11:08:22.317Z"
+    },
+    {
+      "id": 826,
+      "company_id": 6,
+      "agent_name": "Chief Justice",
+      "log_level": "INFO",
+      "message": "Chief Justice verdict registered.",
+      "created_at": "2026-07-08T11:08:22.381Z"
     }
   ],
   "search_history": [
@@ -5467,6 +5367,18 @@
       "ticker": "AAPL",
       "query": "AAPL",
       "created_at": "2026-07-07T15:42:33.720Z"
+    },
+    {
+      "id": 193,
+      "ticker": "MSFT",
+      "query": "MSFT",
+      "created_at": "2026-07-08T11:08:12.123Z"
+    },
+    {
+      "id": 194,
+      "ticker": "MSFT",
+      "query": "MSFT",
+      "created_at": "2026-07-08T11:08:12.747Z"
     }
   ]
 }

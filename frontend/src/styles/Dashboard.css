@@ -544,3 +544,49 @@
     min-width: 0 !important;
   }
 }
+
+/* Progress Checklist Panel */
+.progress-checklist-panel {
+  padding: 16px;
+}
+
+@media (min-width: 768px) {
+  .progress-checklist-panel {
+    padding: 32px;
+  }
+}
+
+/* AI Confidence Breakdown Section */
+.confidence-section {
+  padding: 16px;
+}
+
+.confidence-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.confidence-grid > div:last-child {
+  grid-column: span 2;
+}
+
+@media (min-width: 600px) {
+  .confidence-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .confidence-grid > div:last-child {
+    grid-column: span 1;
+  }
+}
+
+@media (min-width: 768px) {
+  .confidence-section {
+    padding: 32px;
+  }
+  .confidence-grid {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 16px;
+  }
+}
+

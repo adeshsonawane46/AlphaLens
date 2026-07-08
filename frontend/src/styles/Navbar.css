@@ -175,7 +175,7 @@
   }
 
   .navbar-avatar-btn {
-    margin-left: auto;
+    margin-left: 16px;
     color: var(--on-surface-variant);
     display: flex !important;
     align-items: center;

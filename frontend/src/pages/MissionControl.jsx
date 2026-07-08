@@ -209,15 +209,14 @@ const MissionControl = () => {
           `}</style>
 
           <div className="glass-card progress-checklist-panel" style={{
-            padding: '32px',
             borderRadius: '16px',
             marginTop: '24px',
             background: 'rgba(10, 13, 23, 0.4)',
             backdropFilter: 'blur(20px)',
             border: '1px solid rgba(178, 197, 255, 0.1)'
           }}>
-            <h3 style={{ fontSize: '20px', fontWeight: '800', color: '#fff', marginBottom: '24px', display: 'flex', alignItems: 'center', gap: '10px' }}>
-              <span className="material-symbols-outlined text-primary">analytics</span>
+            <h3 style={{ fontSize: '20px', fontWeight: '800', color: '#fff', marginBottom: '24px', display: 'flex', alignItems: 'flex-start', gap: '10px' }}>
+              <span className="material-symbols-outlined text-primary" style={{ marginTop: '2px' }}>analytics</span>
               AI Research Pipeline Execution
             </h3>
             

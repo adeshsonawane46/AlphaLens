@@ -1077,11 +1077,11 @@ const CompanyAnalysis = () => {
           </section>
 
           {/* 7. AI Confidence Breakdown */}
-          <section className="glass-card" style={{ padding: '32px', borderRadius: '16px', marginTop: '32px' }}>
+          <section className="glass-card confidence-section" style={{ borderRadius: '16px', marginTop: '32px' }}>
             <h3 style={{ color: '#fff', fontSize: '20px', fontWeight: '700', marginBottom: '8px' }}>AI Confidence Transparency</h3>
             <p style={{ color: 'var(--outline)', fontSize: '13px', marginBottom: '24px' }}>Breakdown of datasets compiled to reach the 89% consensus confidence score.</p>
             
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(5, 1fr)', gap: '16px' }}>
+            <div className="confidence-grid">
               {[
                 { name: "Financial Data", status: "Complete", score: "100%", color: "#22c55e" },
                 { name: "News Coverage", status: "Complete", score: "100%", color: "#22c55e" },
