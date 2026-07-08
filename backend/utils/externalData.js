@@ -64,6 +64,56 @@ function parseTicker(ticker, isIndianFlag) {
  * Resolves a search string into a Twelve Data ticker symbol.
  * Keeps the function name resolveYahooTicker for compatibility.
  */
+/**
+ * Helper to check if a symbol exists on Indian exchanges (NSE/BSE).
+ */
+async function checkIndianSymbol(sym) {
+  try {
+    const baseSym = sym.split(' ')[0].split('-')[0].split('.')[0].toUpperCase();
+    const quote = await makeTwelveDataRequest('quote', { symbol: baseSym, exchange: 'NSE' });
+    if (quote && quote.symbol) {
+      return {
+        ticker: `${baseSym}.NS`,
+        isIndian: true,
+        profile: {
+          name: quote.name || baseSym,
+          nseSymbol: baseSym,
+          bseCode: null,
+          sector: null,
+          industry: null,
+          exchange: 'NSE',
+          country: 'India',
+          flag: '🇮🇳',
+          currency: 'INR'
+        }
+      };
+    }
+  } catch (e) {
+    try {
+      const baseSym = sym.split(' ')[0].split('-')[0].split('.')[0].toUpperCase();
+      const quote = await makeTwelveDataRequest('quote', { symbol: baseSym, exchange: 'BSE' });
+      if (quote && quote.symbol) {
+        return {
+          ticker: `${baseSym}.BO`,
+          isIndian: true,
+          profile: {
+            name: quote.name || baseSym,
+            nseSymbol: baseSym,
+            bseCode: baseSym,
+            sector: null,
+            industry: null,
+            exchange: 'BSE',
+            country: 'India',
+            flag: '🇮🇳',
+            currency: 'INR'
+          }
+        };
+      }
+    } catch (e2) {}
+  }
+  return null;
+}
+
 async function resolveYahooTicker(query) {
   if (!query) return null;
 
@@ -78,10 +128,27 @@ async function resolveYahooTicker(query) {
     };
   }
 
+  // 1b. If the query looks like a clean ticker symbol (alphanumeric, max 10 chars), try checking if it exists in India
+  const cleanQuery = query.trim().toUpperCase();
+  if (/^[A-Z0-9]{1,10}$/.test(cleanQuery)) {
+    const indianResolve = await checkIndianSymbol(cleanQuery);
+    if (indianResolve) {
+      console.log(`[Resolve] Query "${query}" resolved directly to Indian stock: ${indianResolve.ticker}`);
+      return indianResolve;
+    }
+  }
+
+  // Clean common company suffixes (ltd, limited, inc, corp, etc.) to prevent search confusion
+  const cleanedQuery = query
+    .replace(/\b(ltd|limited|corp|corporation|inc|incorporated|co|company|plc|ag|sa)\b\.?/gi, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+  const searchQuery = cleanedQuery.length > 0 ? cleanedQuery : query;
+
   // 2. Try Yahoo Finance search autocomplete first
   try {
-    console.log(`[YahooFinance] Autocomplete search for query: "${query}"...`);
-    const searchRes = await axios.get(`https://query2.finance.yahoo.com/v1/finance/search?q=${encodeURIComponent(query)}`, {
+    console.log(`[YahooFinance] Autocomplete search for query: "${query}" (cleaned: "${searchQuery}")...`);
+    const searchRes = await axios.get(`https://query2.finance.yahoo.com/v1/finance/search?q=${encodeURIComponent(searchQuery)}`, {
       headers: {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
       },
@@ -89,7 +156,28 @@ async function resolveYahooTicker(query) {
     });
 
     if (searchRes.data && searchRes.data.quotes && searchRes.data.quotes.length > 0) {
-      const match = searchRes.data.quotes[0];
+      // Prioritize Indian stock listings in Yahoo results
+      let match = searchRes.data.quotes.find(q => {
+        const exch = (q.exchange || '').toUpperCase();
+        const sym = (q.symbol || '').toUpperCase();
+        return exch.includes('NSE') || exch.includes('BSE') || exch.includes('NSI') || exch.includes('BOM') || sym.endsWith('.NS') || sym.endsWith('.BO');
+      });
+
+      // If no explicit Indian listing, check if any of the top 3 quotes exist on Indian exchanges
+      if (!match) {
+        for (const q of searchRes.data.quotes.slice(0, 3)) {
+          const indianResolve = await checkIndianSymbol(q.symbol);
+          if (indianResolve) {
+            console.log(`[Resolve] YahooFinance quote symbol "${q.symbol}" resolved to Indian stock: ${indianResolve.ticker}`);
+            return indianResolve;
+          }
+        }
+      }
+
+      if (!match) {
+        match = searchRes.data.quotes[0];
+      }
+
       const tickerSymbol = match.symbol;
       const exchange = (match.exchange || '').toUpperCase();
       const country = match.country || '';
@@ -103,13 +191,16 @@ async function resolveYahooTicker(query) {
         finalExch = 'NYSE';
       }
 
+      const baseSymbol = tickerSymbol.split(' ')[0].split('-')[0].split('.')[0].toUpperCase();
+      const finalTickerSymbol = isIndian ? (finalExch === 'BSE' ? `${baseSymbol}.BO` : `${baseSymbol}.NS`) : tickerSymbol;
+
       return {
-        ticker: tickerSymbol,
+        ticker: finalTickerSymbol,
         isIndian,
         profile: {
           name: match.longname || match.shortname || tickerSymbol,
-          nseSymbol: tickerSymbol.split('.')[0],
-          bseCode: isIndian && finalExch === 'BSE' ? tickerSymbol.split('.')[0] : null,
+          nseSymbol: baseSymbol,
+          bseCode: isIndian && finalExch === 'BSE' ? baseSymbol : null,
           sector: match.sector || null,
           industry: match.industry || null,
           exchange: finalExch,
@@ -125,25 +216,49 @@ async function resolveYahooTicker(query) {
 
   // 3. Fallback to Twelve Data symbol_search API
   try {
-    console.log(`[TwelveData] Searching for symbol matching: "${query}"...`);
-    const searchRes = await makeTwelveDataRequest('symbol_search', { symbol: query });
+    console.log(`[TwelveData] Searching for symbol matching: "${query}" (cleaned: "${searchQuery}")...`);
+    const searchRes = await makeTwelveDataRequest('symbol_search', { symbol: searchQuery });
     if (searchRes.data && searchRes.data.length > 0) {
-      const match = searchRes.data[0];
+      // Prioritize Indian stock listings in Twelve Data results
+      let match = searchRes.data.find(q => {
+        const exch = (q.exchange || '').toUpperCase();
+        const country = (q.country || '').toLowerCase();
+        const curr = (q.currency || '').toUpperCase();
+        return exch.includes('NSE') || exch.includes('BSE') || country === 'india' || curr === 'INR';
+      });
+
+      // If no explicit Indian listing, check if any of the top 3 symbols exist on Indian exchanges
+      if (!match) {
+        for (const q of searchRes.data.slice(0, 3)) {
+          const indianResolve = await checkIndianSymbol(q.symbol);
+          if (indianResolve) {
+            console.log(`[Resolve] TwelveData search symbol "${q.symbol}" resolved to Indian stock: ${indianResolve.ticker}`);
+            return indianResolve;
+          }
+        }
+      }
+
+      if (!match) {
+        match = searchRes.data[0];
+      }
+
       const tickerSymbol = match.symbol;
       const exchange = (match.exchange || '').toUpperCase();
       const country = match.country || '';
+      const curr = (match.currency || '').toUpperCase();
       
-      const isIndian = exchange.includes('NSE') || exchange.includes('BSE') || country.toLowerCase() === 'india';
+      const isIndian = exchange.includes('NSE') || exchange.includes('BSE') || country.toLowerCase() === 'india' || curr === 'INR' || tickerSymbol.endsWith('.NS') || tickerSymbol.endsWith('.BO');
       
-      let finalTicker = tickerSymbol;
+      const baseSymbol = tickerSymbol.split(' ')[0].split('-')[0].split('.')[0].toUpperCase();
+      let finalTicker = baseSymbol;
       let finalExch = 'NASDAQ';
       
       if (isIndian) {
         if (exchange.includes('BSE') || match.mic_code === 'XBOM') {
-          finalTicker = `${tickerSymbol}.BO`;
+          finalTicker = `${baseSymbol}.BO`;
           finalExch = 'BSE';
         } else {
-          finalTicker = `${tickerSymbol}.NS`;
+          finalTicker = `${baseSymbol}.NS`;
           finalExch = 'NSE';
         }
       } else {
@@ -159,8 +274,8 @@ async function resolveYahooTicker(query) {
         isIndian,
         profile: {
           name: match.instrument_name || tickerSymbol,
-          nseSymbol: tickerSymbol,
-          bseCode: isIndian && finalExch === 'BSE' ? tickerSymbol : null,
+          nseSymbol: baseSymbol,
+          bseCode: isIndian && finalExch === 'BSE' ? baseSymbol : null,
           sector: match.sector || null,
           industry: match.industry || null,
           exchange: finalExch,

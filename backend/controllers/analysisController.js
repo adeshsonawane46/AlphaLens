@@ -215,14 +215,77 @@ async function getAutocomplete(req, res) {
   if (!q) return res.json({ suggestions: [] });
   try {
     let suggestions = getAutocompleteSuggestions(q);
+
+    // Clean common company suffixes (ltd, limited, inc, corp, etc.) to prevent search confusion
+    const cleanedQuery = q
+      .replace(/\b(ltd|limited|corp|corporation|inc|incorporated|co|company|plc|ag|sa)\b\.?/gi, '')
+      .replace(/\s+/g, ' ')
+      .trim();
+    const searchQuery = cleanedQuery.length > 0 ? cleanedQuery : q;
     
-    // Supplement with Twelve Data search results for production autocomplete experience
+    // 1. Supplement with Yahoo Finance search results
+    if (suggestions.length < 10) {
+      try {
+        const axios = require('axios');
+        const url = `https://query2.finance.yahoo.com/v1/finance/search?q=${encodeURIComponent(searchQuery)}`;
+        const response = await axios.get(url, {
+          headers: {
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+          },
+          timeout: 4000
+        });
+
+        if (response.data && response.data.quotes && response.data.quotes.length > 0) {
+          const yahooSuggestions = response.data.quotes
+            .filter(quote => quote.quoteType === 'EQUITY' || quote.quoteType === undefined)
+            .map(quote => {
+              const exch = (quote.exchange || '').toUpperCase();
+              const symbol = (quote.symbol || '').toUpperCase();
+              const isIndian = exch.includes('NSE') || exch.includes('BSE') || exch.includes('NSI') || exch.includes('BOM') || symbol.endsWith('.NS') || symbol.endsWith('.BO');
+              
+              let displayExch = 'NASDAQ';
+              if (isIndian) {
+                displayExch = symbol.endsWith('.BO') || exch.includes('BSE') || exch.includes('BOM') ? 'BSE' : 'NSE';
+              } else {
+                if (exch.includes('NYSE') || quote.exchDisp === 'NYSE') {
+                  displayExch = 'NYSE';
+                }
+              }
+              
+              const baseSymbol = symbol.split(' ')[0].split('-')[0].split('.')[0].toUpperCase();
+              const displaySymbol = isIndian ? (displayExch === 'BSE' ? `${baseSymbol}.BO` : `${baseSymbol}.NS`) : symbol;
+              
+              return {
+                name: quote.longname || quote.shortname || symbol,
+                nseSymbol: displaySymbol,
+                exchange: displayExch,
+                sector: quote.sector || 'Various Sectors',
+                country: isIndian ? 'India' : 'United States',
+                flag: isIndian ? '🇮🇳' : '🇺🇸'
+              };
+            });
+
+          // Deduplicate suggestions based on symbol
+          const existingTickers = new Set(suggestions.map(s => s.nseSymbol.toUpperCase()));
+          for (const item of yahooSuggestions) {
+            if (!existingTickers.has(item.nseSymbol.toUpperCase())) {
+              suggestions.push(item);
+              existingTickers.add(item.nseSymbol.toUpperCase());
+            }
+          }
+        }
+      } catch (err) {
+        console.warn('[Autocomplete] Failed to fetch Yahoo Finance search suggestions:', err.message);
+      }
+    }
+
+    // 2. Supplement with Twelve Data search results for fallback production autocomplete experience
     if (suggestions.length < 5) {
       try {
         const apiKey = process.env.TWELVE_DATA_API_KEY;
         if (apiKey) {
           const axios = require('axios');
-          const url = `https://api.twelvedata.com/symbol_search?symbol=${encodeURIComponent(q)}&apikey=${apiKey}`;
+          const url = `https://api.twelvedata.com/symbol_search?symbol=${encodeURIComponent(searchQuery)}&apikey=${apiKey}`;
           const response = await axios.get(url);
           if (response.data && response.data.data) {
             const apiSuggestions = response.data.data.map(item => {

@@ -9,7 +9,11 @@ async function runResearchAgent(state) {
   // Fetch Wikipedia summary description
   const wikiSummary = await fetchWikipediaSummary(companyName || ticker);
 
-  const systemInstruction = `You are the Lead Investment Researcher for AlphaLens AI. Your role is to discover the fundamental profile of the company. Return a JSON object with:
+  const systemInstruction = `You are the Lead Investment Researcher for AlphaLens AI. Your role is to discover the fundamental profile of the company.
+  
+  CRITICAL: You are researching the specific company named: "${companyName}". Ticker symbols can occasionally have collisions or represent different companies on different exchanges. You must prioritize the company name "${companyName}" and retrieve its correct official registered name, sector, and industry. Do NOT analyze a different company just because of a ticker symbol collision.
+  
+  Return a JSON object with:
   {
     "officialName": "official registered name of the company (e.g. Tata Consultancy Services Ltd., State Bank of India, Reliance Industries Ltd.)",
     "ticker": "NSE/BSE symbol or US ticker (e.g. TCS, SBIN, RELIANCE)",
@@ -25,9 +29,9 @@ async function runResearchAgent(state) {
     "logs": ["log message 1", "log message 2"]
   }`;
 
-  const prompt = `Research company profile for ticker: ${ticker}, name: ${companyName || ticker}.
+  const prompt = `Research company profile for the company named: "${companyName}" (ticker symbol: ${ticker}).
   Wikipedia context: ${wikiSummary}.
-  Ensure you retrieve CEO, products, business model, competitors, and exact founded year. Use Google Search grounding to retrieve current CEO and exact official company name.
+  Ensure you retrieve CEO, products, business model, competitors, and exact founded year. Use Google Search grounding to retrieve current CEO and exact official company name of "${companyName}".
   Return official registered company name, not abbreviations. Never return generic text.`;
 
   const result = await callGemini(prompt, { 
