@@ -120,26 +120,53 @@ LangChain.js serves as the modular foundation for the AI engine, managing the fo
 ### 2. Orchestration via LangGraph.js
 LangGraph.js defines a stateful graph where each node represents a LangChain-powered agent. The workflow coordinates data compilation step-by-step:
 
-```
-       ┌──────────────────────┐
-       │ Ticker Validator     │
-       └──────────┬───────────┘
-                  ▼
-       ┌──────────────────────┐
-       │ Financial Collector  │
-       └──────────┬───────────┘
-                  ▼
-       ┌──────────────────────┐
-       │ News Scraper         │
-       └──────────┬───────────┘
-                  ▼
-       ┌──────────────────────┐
-       │ Competency Evaluator │
-       └──────────┬───────────┘
-                  ▼
-       ┌──────────────────────┐
-       │ Investment Analyst   │
-       └──────────────────────┘
+## 🤖 AI Research Pipeline
+
+AlphaLens AI executes a structured AI research pipeline to analyze companies and generate investment recommendations. Each stage performs a dedicated task before passing the results to the next stage.
+
+```text
+                    User Search
+                         │
+                         ▼
+          ┌────────────────────────────┐
+          │ 1. Research Started        │
+          └─────────────┬──────────────┘
+                        ▼
+          ┌────────────────────────────┐
+          │ 2. Finding Company         │
+          └─────────────┬──────────────┘
+                        ▼
+          ┌────────────────────────────┐
+          │ 3. Detecting Exchange      │
+          └─────────────┬──────────────┘
+                        ▼
+          ┌─────────────────────────────┐
+          │ 4. Fetching Live Market Data│
+          └─────────────┬───────────────┘
+                        ▼
+          ┌────────────────────────────┐
+          │ 5. Collecting Financials   │
+          └─────────────┬──────────────┘
+                        ▼
+          ┌────────────────────────────┐
+          │ 6. Fetching News           │
+          └─────────────┬──────────────┘
+                        ▼
+          ┌────────────────────────────┐
+          │ 7. Analyzing Competitors   │
+          └─────────────┬──────────────┘
+                        ▼
+          ┌────────────────────────────┐
+          │ 8. Running AI Agents       │
+          └─────────────┬──────────────┘
+                        ▼
+          ┌────────────────────────────┐
+          │ 9. Generating AI Report    │
+          └─────────────┬──────────────┘
+                        ▼
+          ┌────────────────────────────┐
+          │ 10. Completed              │
+          └────────────────────────────┘
 ```
 
 *   **Ticker Validator Node**: Verifies ticker legitimacy and resolves exchange parameters.
@@ -212,6 +239,7 @@ AlphaLens/
 │   │   ├── styles/      # Modular Vanilla CSS stylesheets
 │   │   └── App.jsx      # React router configuration
 │   └── package.json
+├── ARCHITECTURE.md
 └── README.md
 ```
 
@@ -226,27 +254,38 @@ AlphaLens/
        ┌─────────────────────────┐
        │ React Frontend (Vercel) │
        └────────────┬────────────┘
-                    │ HTTPS Request
+                    │ HTTPS Requests
                     ▼
       ┌───────────────────────────┐
       │ Express Backend (Render)  │
       └───────┬─────────┬─────────┘
               │         │
-              ▼         ▼
-      ┌───────────┐  ┌────────────────────┐
-      │ MySQL DB  │  │ LangGraph Workflow │
-      └───────────┘  └─────────┬──────────┘
-                               ▼
-                    Google Gemini API
-                               │
-                               ▼
-                  AI Investment Analysis
-                               │
-                               ▼
-                 JSON Response to Frontend
-                               │
-                               ▼
-              Interactive Dashboard & Charts
+              │         ▼
+              │   ┌────────────────────┐
+              │   │ LangGraph Workflow │
+              │   └─────────┬──────────┘
+              │             │
+              │      ┌──────┴──────┐
+              │      │             │
+              ▼      ▼             ▼
+      ┌───────────┐  ┌──────────────┐
+      │ MySQL DB  │  │ Gemini API   │
+      └───────────┘  └──────────────┘
+                     ▲
+                     │
+             ┌───────────────┐
+             │ Twelve Data   │
+             │ API           │
+             └───────────────┘
+                     │
+                     ▼
+          AI Investment Analysis
+                     │
+                     ▼
+          JSON Response to Frontend
+                     │
+                     ▼
+      Interactive Dashboard & Charts
 ```
 
 1.  **Search Submission**: A user enters a ticker (e.g., `TCS`) in the frontend search bar and hits enter.
