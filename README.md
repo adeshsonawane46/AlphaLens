@@ -133,29 +133,41 @@ Real-time monitoring dashboard displaying
 ```mermaid
 graph TD
 
-A[React + Vite Frontend]
+U[User]
 
-B[Express REST API]
+A[React + Vite Frontend<br/>Hosted on Vercel]
 
-C[LangGraph Workflow]
+B[Express.js Backend<br/>Hosted on Render]
 
-D[LangChain]
+C[MySQL Database]
 
-E[Google Gemini]
+D[Twelve Data API]
 
-F[(MySQL)]
+E[LangGraph Workflow]
 
-A --> B
+F[Google Gemini API]
+
+G[AI Investment Report]
+
+H[Interactive Dashboard]
+
+U --> A
+A -->|HTTPS Requests| B
 
 B --> C
+B --> D
+B --> E
 
-C --> D
+E --> F
 
-D --> E
+F --> G
 
-B --> F
+G --> B
+
+B --> A
+
+A --> H
 ```
-
 ---
 
 # ⚙ Tech Stack
@@ -272,7 +284,7 @@ The investment analysis process follows a sequential multi-agent workflow:
 
 # 📂 Project Structure
 
-```
+```text
 AlphaLens
 │
 ├── backend
@@ -288,14 +300,24 @@ AlphaLens
 ├── frontend
 │   ├── public
 │   ├── src
-│   │
-│   ├── components
-│   ├── pages
-│   ├── services
-│   ├── styles
-│   ├── assets
-│   ├── App.jsx
-│   └── main.jsx
+│   │   ├── components
+│   │   ├── pages
+│   │   ├── services
+│   │   ├── styles
+│   │   ├── assets
+│   │   ├── App.jsx
+│   │   └── main.jsx
+│
+├── screenshots
+│   ├── dashboard.png
+│   ├── Analysis.png
+│   ├── Real-time Market Metrics.png
+│   ├── Investment Verdict Overview.png
+│   ├── AI Committee Agent Pipeline.png
+│   ├── Chief Justice AI Verdict.png
+│   ├── Question the AI.png
+│   ├── Revenue Growth and spider graph.png
+│   └── What-if lab.png
 │
 ├── ARCHITECTURE.md
 └── README.md

@@ -219,26 +219,41 @@ The architecture follows a decoupled client-server model, allowing each layer to
 
 ## 📁 Project Folder Structure
 
-```
-AlphaLens/
-├── backend/
-│   ├── config/
-│   ├── middleware/
-│   ├── utils/
-│   ├── agents/          # LangGraph multi-agent nodes & state definitions
-│   ├── controllers/     # Route logic controller handlers (simulation, watchlists)
-│   ├── database/        # MySQL configuration, schema.sql, and JSON mock database
-│   ├── routes/          # Express route bindings
-│   ├── server.js        # Backend entry point
+```text
+AlphaLens
+│
+├── backend
+│   ├── agents
+│   ├── controllers
+│   ├── database
+│   ├── routes
+│   ├── services
+│   ├── utils
+│   ├── server.js
 │   └── package.json
-├── frontend/
-│   ├── src/
-│   │   ├── components/  # Reusable UI widgets (Navbar, Sidebar, Footer, Charts)
-│   │   ├── pages/       # Page components (MissionControl, CompanyAnalysis)
-│   │   ├── services/    # Axios HTTP client requests config
-│   │   ├── styles/      # Modular Vanilla CSS stylesheets
-│   │   └── App.jsx      # React router configuration
-│   └── package.json
+│
+├── frontend
+│   ├── public
+│   ├── src
+│   │   ├── components
+│   │   ├── pages
+│   │   ├── services
+│   │   ├── styles
+│   │   ├── assets
+│   │   ├── App.jsx
+│   │   └── main.jsx
+│
+├── screenshots
+│   ├── dashboard.png
+│   ├── Analysis.png
+│   ├── Real-time Market Metrics.png
+│   ├── Investment Verdict Overview.png
+│   ├── AI Committee Agent Pipeline.png
+│   ├── Chief Justice AI Verdict.png
+│   ├── Question the AI.png
+│   ├── Revenue Growth and spider graph.png
+│   └── What-if lab.png
+│
 ├── ARCHITECTURE.md
 └── README.md
 ```
